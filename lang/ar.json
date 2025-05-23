@@ -1,0 +1,21 @@
+{   
+    "appName": "",
+    "loading": "جار التحميل...",
+    "noInternet": "لا يوجد اتصال بالإنترنت",
+    "tryToConnect": "حاول الاتصال",
+    "changeLanguage": "تغيير اللغة",
+    "chooseDate": "اختر التاريخ",
+    "cancel": "إلغاء",
+    "english": "الإنجليزية",
+    "error": "حدث خطأ",
+    "noDataFound": "لا توجد بيانات",
+
+    "####HomeScreen":"",
+    "search": "بحث",
+    "welcome": "مرحبًا،",
+    "searchHint": "ابحث عن شيء ما...",
+    "home": "الرئيسية",
+    "account": "الحساب",
+    "settings": "الإعدادات" 
+}
+ 

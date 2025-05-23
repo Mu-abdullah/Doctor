@@ -1,0 +1,21 @@
+{   
+    "appName": "",
+    "loading": "Loading...",
+    "noInternet": "No internet connection",
+    "tryToConnect":  "Try to connect",
+    "changeLanguage":   "Change language",
+    "chooseDate":   "Choose date",
+    "cancel":   "Cancel",
+    "english":  "English",
+    "error":    "An error occurred",
+    "noDataFound":  "No data found",
+
+    "####HomeScreen":"",
+    "search": "Search",
+     "welcome": "Welcome,",
+    "searchHint": "Search for something...",
+    "home": "Home",
+    "account": "Account",
+    "settings": "Settings"
+}
+ 
