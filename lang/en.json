@@ -16,6 +16,11 @@
     "searchHint": "Search for something...",
     "home": "Home",
     "account": "Account",
-    "settings": "Settings"
+    "settings": "Settings" ,
+
+    "####DoctorHomeScreen":"",
+    "entered": "Entered",
+    "waiting": "Waiting",
+    "completed": "Completed"
 }
  

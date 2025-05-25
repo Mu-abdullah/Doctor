@@ -19,4 +19,10 @@ class LangKeys {
   static const String search = 'search';
   static const String searchHint = 'searchHint';
   static const String welcome = 'welcome';
+
+  /// [DOCTOR HOME SCREEN]
+  static const String entered = 'entered';
+  static const String waiting = 'waiting';
+  static const String completed = 'completed';
+
 }

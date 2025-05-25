@@ -16,6 +16,11 @@
     "searchHint": "ابحث عن شيء ما...",
     "home": "الرئيسية",
     "account": "الحساب",
-    "settings": "الإعدادات" 
+    "settings": "الإعدادات" ,
+
+    "####DoctorHomeScreen":"",
+    "entered": "تم دخول",
+    "waiting": "في الانتظار",
+    "completed": "اكتمل"
 }
  
