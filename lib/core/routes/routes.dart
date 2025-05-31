@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../features/doctor/doctor_home/presentation/views/doctor_home.dart';
 import '../../features/doctor/doctor_profile_page/presentation/views/doctor_profile_page.dart';
 import '../../features/doctor/doctor_search_screen/presentation/views/doctor_search_screen.dart';
+import '../../features/doctor/patient_screen/presentation/views/patient_screen.dart';
 import '../app/image/image_preview.dart';
 import '../app/language/language_screen.dart';
 import '../app/no_internet/no_internet_screen.dart';
@@ -44,6 +45,9 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
     case RoutesNames.doctorProfile:
       return BaseRoute(page: DoctorProfilePage());
+
+    case RoutesNames.patientScreen:
+      return BaseRoute(page: PatientScreen());
 
     /////////
     /////////user feature routes////////////

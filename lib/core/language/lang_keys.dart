@@ -24,6 +24,7 @@ class LangKeys {
   static const String entered = 'entered';
   static const String waiting = 'waiting';
   static const String completed = 'completed';
+  static const String nextVisit = 'nextVisit';
 
   /// [DOCTOR Settings SCREEN]
   static const String profile = 'profile';

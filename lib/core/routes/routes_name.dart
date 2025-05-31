@@ -10,4 +10,5 @@ class RoutesNames {
   static const String doctorHome = 'doctorHome';
   static const String doctorSearch = 'doctorSearch';
   static const String doctorProfile = 'doctorProfile';
+  static const String patientScreen = 'patientScreen';
 }
