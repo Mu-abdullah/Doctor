@@ -1,22 +1,15 @@
-import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/routes/routes_name.dart';
-import '../../../../../core/style/widgets/app_button.dart';
+import '../refactor/doctor_settings_page_body.dart';
 
 class DoctorSettingsPage extends StatelessWidget {
   const DoctorSettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: AppButton(
-        onTap: () {
-          context.pushNamed(RoutesNames.language);
-        },
-        text: LangKeys.changeLanguage,
-      ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: SingleChildScrollView(child: DoctorSettingsPageBody()),
     );
   }
 }

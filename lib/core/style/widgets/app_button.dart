@@ -21,9 +21,11 @@ class AppButton extends StatelessWidget {
     this.boxShadow = false,
     this.isDisabled = false,
     this.icon,
+    this.isUpperCase = true,
     this.iconColor = AppColors.white,
     this.circleSize = 50,
     this.borderWidth = 1,
+    this.fontWeight,
     super.key,
   });
 
@@ -39,9 +41,11 @@ class AppButton extends StatelessWidget {
   final bool isCircle;
   final bool isDisabled;
   final bool boxShadow;
+  final bool isUpperCase;
   final IconData? icon;
   final double circleSize;
   final double borderWidth;
+  final FontWeight? fontWeight;
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +94,14 @@ class AppButton extends StatelessWidget {
   }
 
   Widget _buildText(BuildContext context, Color textColor) {
-    return AppText(text!, isUpperCase: true, color: textColor, isBold: true);
+    return AppText(
+      text!,
+      color: textColor,
+      isBold: true,
+      fontSize: fontSize,
+      isUpperCase: isUpperCase,
+      fontWeight: fontWeight,
+    );
   }
 
   Widget _buildIcon(Color iconColor) {

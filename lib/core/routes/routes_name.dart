@@ -8,4 +8,5 @@ class RoutesNames {
 
   // doctor screens
   static const String doctorHome = 'doctorHome';
+  static const String doctorSearch = 'doctorSearch';
 }

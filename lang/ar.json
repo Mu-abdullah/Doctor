@@ -21,6 +21,17 @@
     "####DoctorHomeScreen":"",
     "entered": "تم دخول",
     "waiting": "في الانتظار",
-    "completed": "اكتمل"
+    "completed": "اكتمل",
+
+    "####DoctorSettingsScreen":"",
+    "profile":"الملف الشخصي",
+    "email":"البريد الإلكتروني",
+    "password":"كلمة المرور",
+    "preferences":"التفضيلات",
+    "support":"الدعم",
+    "contact":"اتصل بنا",
+    "terms":"الشروط والاحكام",
+    "privacy":"سياسة الخصوصية",
+    "logout":"تسجيل الخروج"
 }
  

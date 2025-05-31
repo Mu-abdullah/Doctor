@@ -21,6 +21,17 @@
     "####DoctorHomeScreen":"",
     "entered": "Entered",
     "waiting": "Waiting",
-    "completed": "Completed"
+    "completed": "Completed",
+
+    "####DoctorSettingsScreen":"",
+    "profile":"Profile",
+    "email":"Email",
+    "password":"Password",
+    "preferences":"Preferences",
+    "support":"Support",
+    "contact":"Contact Us",
+    "terms":"Terms and Conditions",
+    "privacy":"Privacy Policy",
+    "logout":"Log Out"
 }
  

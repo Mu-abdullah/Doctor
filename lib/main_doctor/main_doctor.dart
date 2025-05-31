@@ -114,6 +114,7 @@ class _MainDoctorState extends State<MainDoctor> {
 
   ThemeData get _appTheme => ThemeData(
     primarySwatch: Colors.blue,
-    scaffoldBackgroundColor: AppColors.scaffoldBackground,
+
+    scaffoldBackgroundColor: AppColors.white,
   );
 }

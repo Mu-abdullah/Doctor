@@ -1,13 +1,16 @@
+import 'package:doctor/core/extextions/extentions.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../core/language/lang_keys.dart';
+import '../../../../../core/routes/routes_name.dart';
 import '../../../../../core/style/widgets/app_button.dart';
 import '../../../../../core/style/widgets/app_text_form_felid.dart';
 
 class SearchFieldWidget extends StatelessWidget {
-  const SearchFieldWidget({super.key});
-
+  SearchFieldWidget({super.key});
+  final TextEditingController controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,7 +31,7 @@ class SearchFieldWidget extends StatelessWidget {
         children: [
           Expanded(
             child: AppTextFormField(
-              controller: TextEditingController(),
+              controller: controller,
               type: TextInputType.text,
               hint: LangKeys.searchHint,
               label: LangKeys.search,
@@ -36,10 +39,23 @@ class SearchFieldWidget extends StatelessWidget {
               validate: (c) {
                 return null;
               },
+              onSubmitted: (v) {
+                context.pushNamed(
+                  RoutesNames.doctorSearch,
+                  arguments: {'searchQuery': v},
+                );
+                controller.clear();
+              },
             ),
           ),
           AppButton(
-            onTap: () {},
+            onTap: () {
+              context.pushNamed(
+                RoutesNames.doctorSearch,
+                arguments: {'searchQuery': controller.text},
+              );
+              controller.clear();
+            },
             isCircle: true,
             backGroungColor: Colors.black.withValues(alpha: 0.1),
             icon: HugeIcons.strokeRoundedSearch01,

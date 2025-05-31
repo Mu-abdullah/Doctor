@@ -25,4 +25,14 @@ class LangKeys {
   static const String waiting = 'waiting';
   static const String completed = 'completed';
 
+  /// [DOCTOR Settings SCREEN]
+  static const String profile = 'profile'; 
+  static const String email = 'email'; 
+  static const String password = 'password'; 
+  static const String preferences = 'preferences'; 
+  static const String support = 'support'; 
+  static const String contact = 'contact'; 
+  static const String terms = 'terms'; 
+  static const String privacy = 'privacy'; 
+  static const String logout = 'logout'; 
 }

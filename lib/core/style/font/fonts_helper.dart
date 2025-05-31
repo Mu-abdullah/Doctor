@@ -7,7 +7,7 @@ class FontsHelper {
 
   static String fontLangFamily(BuildContext context) {
     if (context.langCode == 'ar') {
-      return monsterratFontFamily;
+      return fontFamily;
     } else {
       return fontFamily;
     }
