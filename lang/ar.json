@@ -35,6 +35,10 @@
     "logout":"تسجيل الخروج",
 
     "####DoctorSearchScreen":"",
-    "patients":"المرضى"
+    "patients":"المرضى",
+    "patient":"مريض",
+
+    "####DoctorProfileScreen":"",
+    "about":"عن الطبيب"
 }
  

@@ -1,6 +1,10 @@
-class ImageTest {
+class AppTest {
   static const String bloger =
-      'https://images.pexels.com/photos/3194523/pexels-photo-3194523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2';
+      'https://cdn.prod.website-files.com/62d4f06f9c1357a606c3b7ef/65ddf3cdf19abaf5688af2f8_shutterstock_1933145801%20(1).jpg';
+
+  static const String doctorBreif =
+      '''طبيب متخصص في تشخيص وعلاج والوقاية من أمراض القلب والأوعية الدموية. يستخدم الفحوصات الطبية والعلاجات الدوائية والإجراءات غير الجراحية، وقد يحيل للجراحة عند اللزوم، بهدف الحفاظ على صحة قلبك.
+''';
 }
 
 class AppImages {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../features/doctor/doctor_home/presentation/views/doctor_home.dart';
+import '../../features/doctor/doctor_profile_page/presentation/views/doctor_profile_page.dart';
 import '../../features/doctor/doctor_search_screen/presentation/views/doctor_search_screen.dart';
 import '../app/image/image_preview.dart';
 import '../app/language/language_screen.dart';
@@ -40,6 +41,9 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return BaseRoute(
         page: DoctorSearchScreen(searchQuery: args?['searchQuery'] as String?),
       );
+
+    case RoutesNames.doctorProfile:
+      return BaseRoute(page: DoctorProfilePage());
 
     /////////
     /////////user feature routes////////////

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/style/color/app_color.dart';
-import '../../../../../../core/style/widgets/app_text.dart';
 
 class BottomBarItem extends StatefulWidget {
   const BottomBarItem({
@@ -117,32 +116,32 @@ class _BottomBarItemState extends State<BottomBarItem>
                           color: AppColors.white.withValues(
                             alpha: _opacityAnimation.value,
                           ),
-                          size: widget.isSelected ? 21 : null,
+                          size: widget.isSelected ? 24 : 18,
                         ),
                       ),
 
-                      widget.isSelected
-                          ? AnimatedDefaultTextStyle(
-                            duration: const Duration(milliseconds: 300),
-                            curve: widget.animationCurve,
-                            style: customTextStyle(
-                              context,
-                              color: AppColors.white.withValues(
-                                alpha: _opacityAnimation.value,
-                              ),
-                              fontSize: widget.isSelected ? 11 : 10,
-                              fontWeight:
-                                  widget.isSelected
-                                      ? FontWeight.bold
-                                      : FontWeight.normal,
-                            ),
-                            child: AppText(
-                              widget.title,
-                              fontSize: widget.isSelected ? 11 : null,
-                              color: AppColors.white,
-                            ),
-                          )
-                          : const SizedBox.shrink(),
+                      // widget.isSelected
+                      //     ? AnimatedDefaultTextStyle(
+                      //       duration: const Duration(milliseconds: 300),
+                      //       curve: widget.animationCurve,
+                      //       style: customTextStyle(
+                      //         context,
+                      //         color: AppColors.white.withValues(
+                      //           alpha: _opacityAnimation.value,
+                      //         ),
+                      //         fontSize: widget.isSelected ? 11 : 10,
+                      //         fontWeight:
+                      //             widget.isSelected
+                      //                 ? FontWeight.bold
+                      //                 : FontWeight.normal,
+                      //       ),
+                      //       child: AppText(
+                      //         widget.title,
+                      //         fontSize: widget.isSelected ? 11 : null,
+                      //         color: AppColors.white,
+                      //       ),
+                      //     )
+                      //     : const SizedBox.shrink(),
                     ],
                   ),
                 ),

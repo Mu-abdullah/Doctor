@@ -1,11 +1,12 @@
+import 'package:doctor/core/style/color/app_color.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/language/lang_keys.dart';
+import '../../../../../core/style/widgets/app_text.dart';
+import '../../../../../core/style/widgets/custom_app_bar.dart';
 import '../../../doctor_home_page/presentation/views/doctor_home_page.dart';
-import '../../../doctor_profile_page/presentation/views/doctor_profile_page.dart';
 import '../../../doctor_settings_page/presentation/views/doctor_settings_page.dart';
 import '../widgets/bottom_bar/custom_bottom_navigation_bar.dart';
-import '../widgets/home_title.dart';
 
 class DoctorHomeScreen extends StatefulWidget {
   const DoctorHomeScreen({super.key});
@@ -19,13 +20,13 @@ class _DoctorHomeScreenState extends State<DoctorHomeScreen> {
 
   final List<Widget> pages = [
     const DoctorHomePage(),
-    const DoctorProfilePage(),
+    const Center(child: AppText("text", translate: false)),
     const DoctorSettingsPage(),
   ];
-  final List<Widget> appBar = [
-    const HomeTitle(title: LangKeys.settings),
-    const HomeTitle(title: LangKeys.settings),
-    const HomeTitle(title: LangKeys.settings),
+  final List<String> titles = [
+    LangKeys.home,
+    LangKeys.settings,
+    LangKeys.settings,
   ];
 
   void onTabTapped(int index) {
@@ -37,16 +38,13 @@ class _DoctorHomeScreenState extends State<DoctorHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: CustomAppBar(title: titles[currentIndex], isBack: false),
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            currentIndex == 0 ? SizedBox() : appBar[currentIndex],
-            pages[currentIndex],
-          ],
-        ),
+      appBar: CustomAppBar(
+        backgroundColor: AppColors.white,
+        elevation: 5,
+        title: titles[currentIndex],
+        isBack: false,
       ),
+      body: SafeArea(child: pages[currentIndex]),
       bottomNavigationBar: CustomBottomNavigationBar(
         currentIndex: currentIndex,
         onTap: onTabTapped,

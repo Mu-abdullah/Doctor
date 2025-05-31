@@ -35,6 +35,10 @@
     "logout":"Log Out",
 
     "####DoctorSearchScreen":"",
-    "patients":"Patients"
+    "patients":"Patients",
+    "patient":"Patient",
+
+    "####DoctorProfileScreen":"",
+    "about":"About"
 }
  

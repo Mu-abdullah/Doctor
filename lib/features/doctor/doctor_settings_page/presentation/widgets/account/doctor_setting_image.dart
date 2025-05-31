@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/style/statics/image_test.dart';
@@ -13,7 +12,10 @@ class DoctorSettingImage extends StatelessWidget {
       width: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        image: DecorationImage(image: AssetImage(AppImages.logo)),
+        image: DecorationImage(
+          image: NetworkImage(AppTest.bloger),
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
