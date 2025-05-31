@@ -32,6 +32,9 @@
     "contact":"Contact Us",
     "terms":"Terms and Conditions",
     "privacy":"Privacy Policy",
-    "logout":"Log Out"
+    "logout":"Log Out",
+
+    "####DoctorSearchScreen":"",
+    "patients":"Patients"
 }
  

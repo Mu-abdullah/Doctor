@@ -35,4 +35,7 @@ class LangKeys {
   static const String terms = 'terms'; 
   static const String privacy = 'privacy'; 
   static const String logout = 'logout'; 
+
+  ///[DOCTOR Search SCREEN]
+  static const String patients = 'patients';
 }
