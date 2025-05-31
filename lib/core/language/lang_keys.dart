@@ -44,4 +44,9 @@ class LangKeys {
   /// [DOCTOR Profile SCREEN]
   static const String about = 'about';
   static const String services = 'services';
+
+  /// [DOCTOR Patient SCREEN]
+  static const String patientId = 'patientId';
+  static const String visitHistory = 'visitHistory';
+  static const String lastVisit = 'lastVisit';
 }

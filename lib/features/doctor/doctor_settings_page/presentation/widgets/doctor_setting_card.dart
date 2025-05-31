@@ -41,7 +41,7 @@ class DoctorSettingCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AppText(title, isTitle: true, isBold: true),
+                  AppText(title, isBold: true),
                   value == null
                       ? SizedBox.shrink()
                       : AppText(value!, translate: false),

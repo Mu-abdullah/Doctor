@@ -109,9 +109,18 @@ flutter:
     - family: monsterrat
       fonts:
         - asset: assets/fonts/alfont_com_Montserrat-Arabic-SemiBold-1.ttf
-    - family: reqaa
+        
+    - family: almarai
       fonts:
         - asset: assets/fonts/Almarai-Regular.ttf
+
+    - family: inter
+      fonts:
+        - asset: assets/fonts/Inter_18pt-Regular.ttf
+
+    - family: popp
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf

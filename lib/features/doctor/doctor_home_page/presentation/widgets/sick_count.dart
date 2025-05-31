@@ -28,6 +28,7 @@ class SickCount extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           spacing: 10,
           children: [
             HomeCountCard(

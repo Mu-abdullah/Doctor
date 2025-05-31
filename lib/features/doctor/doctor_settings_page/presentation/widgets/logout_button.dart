@@ -15,7 +15,6 @@ class LogOutButton extends StatelessWidget {
       txtColor: AppColors.black,
       fontWeight: FontWeight.w900,
       isUpperCase: false,
-      fontSize: 18,
       backGroungColor: AppColors.blueAccent.withValues(alpha: 0.2),
     );
   }

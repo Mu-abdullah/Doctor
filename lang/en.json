@@ -40,6 +40,11 @@
     "patient":"Patient",
 
     "####DoctorProfileScreen":"",
-    "about":"About"
+    "about":"About",
+
+    "####DoctorPatientScreen":"",
+    "patientId":"Patient ID",
+    "visitHistory":"Visit History",
+    "lastVisit":"Last Visit" 
 }
  

@@ -40,6 +40,11 @@
     "patient":"مريض",
 
     "####DoctorProfileScreen":"",
-    "about":"عن الطبيب"
+    "about":"عن الطبيب",
+
+    "####DoctorPatientScreen":"",
+    "patientId":"رقم المريض",
+    "visitHistory":"الزيارات السابقة",
+    "lastVisit":"الزيارة الأخيرة"
 }
  

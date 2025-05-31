@@ -23,7 +23,7 @@ class DoctorNameCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                AppText(LangKeys.profile, isTitle: true, isBold: true),
+                AppText(LangKeys.profile, isBold: true),
                 AppText("Dr. Emily Carter", translate: false),
               ],
             ),
