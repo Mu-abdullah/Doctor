@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-import '../../../../../../core/language/lang_keys.dart';
 import '../../../../../../core/style/color/app_color.dart';
 import 'bottom_bar_item.dart';
 
@@ -37,19 +36,19 @@ class CustomBottomNavigationBar extends StatelessWidget {
         children: [
           BottomBarItem(
             icon: HugeIcons.strokeRoundedHome01,
-            title: LangKeys.home,
+            // title: LangKeys.home,
             isSelected: currentIndex == 0,
             onTap: () => onTap(0),
           ),
           BottomBarItem(
-            icon: HugeIcons.strokeRoundedUserCheck01,
-            title: LangKeys.account,
+            icon: HugeIcons.strokeRoundedUserGroup,
+            // title: LangKeys.account,
             isSelected: currentIndex == 1,
             onTap: () => onTap(1),
           ),
           BottomBarItem(
             icon: HugeIcons.strokeRoundedSettings01,
-            title: LangKeys.settings,
+            // title: LangKeys.settings,
             isSelected: currentIndex == 2,
             onTap: () => onTap(2),
           ),

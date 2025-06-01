@@ -5,14 +5,13 @@ import '../../../../../../core/style/color/app_color.dart';
 class BottomBarItem extends StatefulWidget {
   const BottomBarItem({
     super.key,
-    required this.title,
+
     required this.icon,
     required this.isSelected,
     required this.onTap,
     this.animationCurve = Curves.easeInOut,
   });
 
-  final String title;
   final IconData icon;
   final bool isSelected;
   final VoidCallback onTap;

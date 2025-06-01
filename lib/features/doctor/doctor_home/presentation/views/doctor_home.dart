@@ -1,11 +1,11 @@
-import 'package:doctor/core/style/color/app_color.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/style/widgets/app_text.dart';
+import '../../../../../core/style/color/app_color.dart';
 import '../../../../../core/style/widgets/custom_app_bar.dart';
 import '../../../doctor_home_page/presentation/views/doctor_home_page.dart';
 import '../../../doctor_settings_page/presentation/views/doctor_settings_page.dart';
+import '../../../patient_list_screen/presentation/views/patient_list_screen.dart';
 import '../widgets/bottom_bar/custom_bottom_navigation_bar.dart';
 
 class DoctorHomeScreen extends StatefulWidget {
@@ -20,12 +20,12 @@ class _DoctorHomeScreenState extends State<DoctorHomeScreen> {
 
   final List<Widget> pages = [
     const DoctorHomePage(),
-    const Center(child: AppText("text", translate: false)),
+    const PatientListScreen(),
     const DoctorSettingsPage(),
   ];
   final List<String> titles = [
     LangKeys.home,
-    LangKeys.settings,
+    LangKeys.patients,
     LangKeys.settings,
   ];
 
