@@ -44,7 +44,9 @@ class SickCount extends StatelessWidget {
               width: context.width(percent: .3),
             ),
             HomeCountCard(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutesNames.visitsScreen);
+              },
               cardIcon: HugeIcons.strokeRoundedClock04,
               cardTitle: LangKeys.waiting,
               cardCount: "10",
@@ -54,7 +56,9 @@ class SickCount extends StatelessWidget {
               width: context.width(percent: .3),
             ),
             HomeCountCard(
-              onTap: () {},
+              onTap: () {
+                context.pushNamed(RoutesNames.visitsScreen);
+              },
               cardIcon: HugeIcons.strokeRoundedClock04,
               cardTitle: LangKeys.completed,
               cardCount: "20",

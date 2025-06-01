@@ -11,4 +11,6 @@ class RoutesNames {
   static const String doctorSearch = 'doctorSearch';
   static const String doctorProfile = 'doctorProfile';
   static const String patientScreen = 'patientScreen';
+  static const String patientListScreen = 'patientListScreen';
+  static const String visitsScreen = 'visitsScreen';
 }

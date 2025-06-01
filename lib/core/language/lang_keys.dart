@@ -11,6 +11,7 @@ class LangKeys {
   static const String english = 'english';
   static const String noDataFound = 'noDataFound';
   static const String error = 'error';
+  static const String unavailable = 'unavailable';
 
   ////[HOME SCREEN]
   static const String home = 'home';
@@ -49,4 +50,6 @@ class LangKeys {
   static const String patientId = 'patientId';
   static const String visitHistory = 'visitHistory';
   static const String lastVisit = 'lastVisit';
+  static const String todayVisits = 'todayVisits';
+  static const String yearsOld = 'yearsOld';
 }

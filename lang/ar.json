@@ -9,6 +9,7 @@
     "english": "الإنجليزية",
     "error": "حدث خطأ",
     "noDataFound": "لا توجد بيانات",
+    "unavailable": "غير متوفر",
 
     "####HomeScreen":"",
     "search": "بحث",
@@ -45,6 +46,8 @@
     "####DoctorPatientScreen":"",
     "patientId":"رقم المريض",
     "visitHistory":"الزيارات السابقة",
-    "lastVisit":"الزيارة الأخيرة"
+    "lastVisit":"الزيارة الأخيرة",
+    "todayVisits":"زيارات اليوم",
+    "yearsOld":"سنة"
 }
  

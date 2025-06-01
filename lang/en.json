@@ -9,6 +9,7 @@
     "english":  "English",
     "error":    "An error occurred",
     "noDataFound":  "No data found",
+    "unavailable": "Unavailable",
 
     "####HomeScreen":"",
     "search": "Search",
@@ -45,6 +46,8 @@
     "####DoctorPatientScreen":"",
     "patientId":"Patient ID",
     "visitHistory":"Visit History",
-    "lastVisit":"Last Visit" 
+    "lastVisit":"Last Visit" ,
+    "todayVisits":"Today's visits",
+    "yearsOld":"Years old"
 }
  
