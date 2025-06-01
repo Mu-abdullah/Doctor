@@ -48,6 +48,9 @@
     "visitHistory":"Visit History",
     "lastVisit":"Last Visit" ,
     "todayVisits":"Today's visits",
-    "yearsOld":"Years old"
+    "yearsOld":"Years old",
+    "startRecord":"Press the button below to start recording the patient's diagnosis. The recording will be automatically transcribed into text.",
+    "recordDiagnosis":"Record Diagnosis"   ,
+    "diagnosis":"Diagnosis"  
 }
  

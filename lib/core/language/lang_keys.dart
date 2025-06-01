@@ -52,4 +52,7 @@ class LangKeys {
   static const String lastVisit = 'lastVisit';
   static const String todayVisits = 'todayVisits';
   static const String yearsOld = 'yearsOld';
+  static const String startRecord = 'startRecord';
+  static const String recordDiagnosis = 'recordDiagnosis';
+  static const String diagnosis = 'diagnosis';
 }
