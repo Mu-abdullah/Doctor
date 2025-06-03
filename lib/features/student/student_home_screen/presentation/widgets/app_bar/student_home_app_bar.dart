@@ -21,7 +21,8 @@ class StudentHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             customShowBottomSheet(
               context: context,
               useSafeArea: false,
-              builder: (_) => StudentHomeDrawer(),
+              title: LangKeys.settings,
+              widget: StudentHomeDrawer(),
             );
           },
         ),

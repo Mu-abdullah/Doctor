@@ -40,27 +40,6 @@ class RecordScreen extends StatelessWidget {
             child: Column(
               spacing: 24,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Expanded(
-                      child: AppText(
-                        LangKeys.diagnosis,
-                        isTitle: true,
-                        isBold: true,
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    InkWell(
-                      onTap: () => Navigator.pop(context),
-                      child: Icon(
-                        HugeIcons.strokeRoundedCancelSquare,
-                        color: AppColors.red,
-                      ),
-                    ),
-                  ],
-                ),
-
                 AppText(LangKeys.startRecord, maxLines: 10),
                 RecordLanguageToggleButton(cubit: cubit),
                 Row(
