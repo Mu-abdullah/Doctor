@@ -1,7 +1,9 @@
+import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../../core/language/lang_keys.dart';
+import '../../../../../../core/routes/routes_name.dart';
 import '../../../../../../core/style/widgets/custom_app_bar.dart';
 import '../../../../../../core/style/widgets/custom_bottom_sheet.dart';
 import 'student_home_setting.dart';
@@ -16,6 +18,12 @@ class StudentHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       isBack: false,
       hasDrawer: true,
       actions: [
+        IconButton(
+          icon: const Icon(HugeIcons.strokeRoundedSearch01),
+          onPressed: () {
+            context.pushNamed(RoutesNames.doctorSearch);
+          },
+        ),
         IconButton(
           icon: const Icon(HugeIcons.strokeRoundedSettings01),
           onPressed: () {

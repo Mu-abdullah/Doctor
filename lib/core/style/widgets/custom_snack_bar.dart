@@ -1,3 +1,4 @@
+import 'package:doctor/core/style/color/app_color.dart';
 import 'package:flutter/material.dart';
 import '../../../core/style/widgets/app_text.dart';
 import 'package:hugeicons/hugeicons.dart';
@@ -12,6 +13,8 @@ class CustomSnackbar {
     bool needIcon = false,
     bool translate = true,
     bool top = true,
+    bool isError = false,
+
     IconData icon = HugeIcons.strokeRoundedCheckmarkCircle01,
   }) {
     final overlay = Overlay.of(context);
@@ -27,7 +30,7 @@ class CustomSnackbar {
               child: Container(
                 padding: const EdgeInsets.all(15),
                 decoration: BoxDecoration(
-                  color: backgroundColor,
+                  color: isError ? AppColors.red : backgroundColor,
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 10)],
                 ),
@@ -37,7 +40,7 @@ class CustomSnackbar {
                     Expanded(
                       child: AppText(
                         message,
-                        color: textColor,
+                        color: isError ? AppColors.white : textColor,
                         maxLines: 5,
                         translate: translate,
                         textAlign: TextAlign.start,

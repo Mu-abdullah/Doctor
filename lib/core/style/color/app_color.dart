@@ -11,4 +11,5 @@ class AppColors {
   /// [Student color]
   static const Color green = Color(0xFF10B981);
   static const Color yellow = Color(0xFFFCD207);
+  static const Color pink = Color(0xFFEC4899);
 }

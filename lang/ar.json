@@ -5,6 +5,7 @@
     "tryToConnect": "حاول الاتصال",
     "changeLanguage": "تغيير اللغة",
     "chooseDate": "اختر التاريخ",
+    "requiredValue": "مطلوب",
     "cancel": "إلغاء",
     "english": "الإنجليزية",
     "arabic": "العربية",
@@ -56,6 +57,17 @@
     "diagnosis":"التشخيص"   ,  
     "treatment":"العلاج"   ,  
     "pressAndStart":"اضغط على الزر وابدأ بالتحدث"  ,
-    "speechNotAvailable":"التعرف على الكلام غير متاح"  
+    "speechNotAvailable":"التعرف على الكلام غير متاح",
+
+    "####NewPatientScreen":"",
+    "registerNewPatient":"تسجيل مريض جديد",
+    "patientName":"اسم المريض",
+    "birth":"تاريخ الميلاد",
+    "gender":"النوع",
+    "phone":"رقم الهاتف",
+    "selectGender":"اختر النوع",
+    "male":"ذكر",
+    "female":"انثى",
+    "register":"تسجيل"
 }
  

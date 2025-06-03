@@ -7,6 +7,7 @@ class LangKeys {
   static const String tryToConnect = 'noInternet';
   static const String changeLanguage = 'changeLanguage';
   static const String chooseDate = 'chooseDate';
+  static const String requiredValue = 'requiredValue';
   static const String cancel = 'cancel';
   static const String english = 'english';
   static const String arabic = 'arabic';
@@ -60,4 +61,15 @@ class LangKeys {
   static const String treatment = 'treatment';
   static const String pressAndStart = 'pressAndStart';
   static const String speechNotAvailable = 'speechNotAvailable';
+
+  /// [DOCTOR New Patient SCREEN]
+  static const String registerNewPatient = 'registerNewPatient';
+  static const String patientName = 'patientName';
+  static const String phone = 'phone';
+  static const String gender = 'gender';
+  static const String birth = 'birth';
+  static const String selectGender = 'selectGender';
+  static const String male = 'male';
+  static const String female = 'female';
+  static const String register = 'register';
 }

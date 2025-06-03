@@ -5,6 +5,7 @@
     "tryToConnect":  "Try to connect",
     "changeLanguage":   "Change language",
     "chooseDate":   "Choose date",
+    "requiredValue":   "Required",
     "cancel":   "Cancel",
     "english":  "English",
     "arabic": "Arabic",
@@ -56,6 +57,17 @@
     "diagnosis":"Diagnosis",  
     "treatment":"Treatment",  
     "pressAndStart":"Press the button and start speaking"  ,
-    "speechNotAvailable":"Speech recognition not available"  
+    "speechNotAvailable":"Speech recognition not available"  ,
+
+    "####NewPatientScreen":"",
+    "registerNewPatient":"Register New Patient"  ,
+    "patientName":"Patient Name",
+    "birth":"Birth",
+    "gender":"Gender",
+    "phone":"Phone",
+    "selectGender":"Select Gender",
+    "male":"Male",
+    "female":"Female",
+    "register":"Register"
 }
  
