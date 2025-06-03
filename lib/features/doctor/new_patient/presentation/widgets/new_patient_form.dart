@@ -1,3 +1,4 @@
+import 'package:doctor/core/functions/select_data.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -13,7 +14,6 @@ class NewPatientForm extends StatelessWidget {
     return Column(
       spacing: 12,
       children: [
-       
         Form(
           key: cubit.formKey,
           child: Column(
@@ -30,6 +30,13 @@ class NewPatientForm extends StatelessWidget {
                 type: TextInputType.text,
                 hint: LangKeys.birth,
                 icon: HugeIcons.strokeRoundedCalendar01,
+                onTap: () {
+                  selectData(
+                    context: context,
+                    controller: cubit.birthController,
+                    content: LangKeys.birth,
+                  );
+                },
               ),
             ],
           ),

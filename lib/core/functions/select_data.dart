@@ -31,8 +31,8 @@ void selectData({
     ),
     onChange: (index) {},
     onSubmit: (index) async {
-      // var date = convertDateToArabic(index.toString());
-      controller.text = index.toString();
+      var date = convertDateToArabic(index.toString());
+      controller.text = date;
     },
     bottomPickerTheme: BottomPickerTheme.blue,
   );
@@ -42,6 +42,6 @@ void selectData({
 
 String convertDateToArabic(String dateString) {
   DateTime dateTime = DateTime.parse(dateString);
-  String formattedDate = intl.DateFormat('dd/MM/yyyy').format(dateTime);
+  String formattedDate = intl.DateFormat('dd-MM-yyyy').format(dateTime);
   return formattedDate;
 }

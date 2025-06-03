@@ -4,7 +4,7 @@ import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../core/language/lang_keys.dart';
 import '../../../../../core/style/color/app_color.dart';
-import '../../../student_new_patient/presentation/views/student_new_patient.dart';
+import '../../../../doctor/new_patient/presentation/views/new_patient.dart';
 
 class StudentAddPatientButton extends StatelessWidget {
   const StudentAddPatientButton({super.key});
@@ -16,7 +16,7 @@ class StudentAddPatientButton extends StatelessWidget {
       onPressed: () {
         customShowBottomSheet(
           context: context,
-          widget: StudentNewPatient(),
+          widget: NewPatient(),
           title: LangKeys.registerNewPatient,
         );
       },

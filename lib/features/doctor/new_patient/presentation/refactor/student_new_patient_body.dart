@@ -6,8 +6,8 @@ import '../widgets/new_patient_form.dart';
 import '../widgets/patient_gender.dart';
 import '../widgets/register_new_patient_button.dart';
 
-class StudentNewPatientBody extends StatelessWidget {
-  const StudentNewPatientBody({super.key});
+class NewPatientBody extends StatelessWidget {
+  const NewPatientBody({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -11,12 +11,14 @@ class NewPatientTextFormField extends StatelessWidget {
     required this.type,
     required this.hint,
     this.icon,
+    this.onTap,
   });
 
   final TextEditingController controller;
   final TextInputType type;
   final String hint;
   final IconData? icon;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return AppTextFormField(
@@ -24,6 +26,7 @@ class NewPatientTextFormField extends StatelessWidget {
       type: type,
       hint: hint,
       label: hint,
+      onTap: onTap,
       prefix: Icon(icon, color: Colors.grey),
       validate: (c) {
         if (c!.isEmpty) {
