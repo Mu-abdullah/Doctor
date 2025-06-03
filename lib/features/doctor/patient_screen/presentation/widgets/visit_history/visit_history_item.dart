@@ -2,7 +2,6 @@ import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-import '../../../../../../core/language/lang_keys.dart';
 import '../../../../../../core/style/color/app_color.dart';
 import '../../../../../../core/style/statics/app_statics.dart';
 import '../../../../../../core/style/statics/image_test.dart';
@@ -18,7 +17,8 @@ class VistiHistoryItem extends StatelessWidget {
       onTap: () {
         customShowBottomSheet(
           context: context,
-          title: LangKeys.visitHistory,
+          title: "25/10/2024",
+          translated: false,
           widget: Container(
             height: context.height(percent: 0.6),
             decoration: BoxDecoration(

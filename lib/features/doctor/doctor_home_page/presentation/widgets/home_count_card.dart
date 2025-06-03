@@ -14,7 +14,7 @@ class HomeCountCard extends StatefulWidget {
     this.color = AppColors.blueAccent,
     this.textColor = AppColors.white,
     this.isHighlighted = false,
-    this.height,
+    this.height = 150,
     this.width,
     this.maxLines = 2,
     this.onTap,
@@ -74,7 +74,7 @@ class _HomeCardState extends State<HomeCountCard>
         },
         child: SizedBox(
           height: widget.height,
-          width: widget.width,
+          width: widget.width ?? context.width(),
           child: Material(
             elevation: widget.isHighlighted ? 6 : 2,
             borderRadius: AppBorderRadius.mediumRadius,
