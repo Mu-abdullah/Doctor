@@ -7,6 +7,7 @@
     "chooseDate": "اختر التاريخ",
     "cancel": "إلغاء",
     "english": "الإنجليزية",
+    "arabic": "العربية",
     "error": "حدث خطأ",
     "noDataFound": "لا توجد بيانات",
     "unavailable": "غير متوفر",
@@ -51,6 +52,10 @@
     "yearsOld":"سنة",
     "startRecord":"اضغط على الزر أدناه لبدء تسجيل تشخيص المريض. سيتم تحويل التسجيل تلقائيًا إلى نص.",
     "recordDiagnosis":"تسجيل التشخيص"   ,
-    "diagnosis":"التشخيص"   
+    "stopRecordDiagnosis":"توقف التسجيل"   ,
+    "diagnosis":"التشخيص"   ,  
+    "treatment":"العلاج"   ,  
+    "pressAndStart":"اضغط على الزر وابدأ بالتحدث"  ,
+    "speechNotAvailable":"التعرف على الكلام غير متاح"  
 }
  

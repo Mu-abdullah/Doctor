@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/style/color/app_color.dart';
 import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/app_text.dart';
+import '../cubits/doctor_setting_cubit/doctor_setting_cubit.dart';
 
 class DoctorSettingCard extends StatelessWidget {
   const DoctorSettingCard({
@@ -20,6 +21,7 @@ class DoctorSettingCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var cubit = DoctorSettingCubit.get(context);
     return InkWell(
       onTap: onTap,
       child: Container(
@@ -32,7 +34,10 @@ class DoctorSettingCard extends StatelessWidget {
               width: 48,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
-                color: AppColors.blueAccent.withValues(alpha: 0.2),
+                color: (cubit.isStudent
+                        ? AppColors.green
+                        : AppColors.blueAccent)
+                    .withValues(alpha: 0.2),
                 shape: BoxShape.rectangle,
               ),
               child: Icon(icon, size: 24),

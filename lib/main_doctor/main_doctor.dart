@@ -109,7 +109,7 @@ class _MainDoctorState extends State<MainDoctor> {
   }
 
   String _getConnectedInitialRoute() {
-    return RoutesNames.doctorHome;
+    return RoutesNames.studentHomeScreen;
   }
 
   ThemeData get _appTheme => ThemeData(

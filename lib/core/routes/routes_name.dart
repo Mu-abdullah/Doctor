@@ -6,11 +6,14 @@ class RoutesNames {
   static const String auth = 'auth';
   static const String checkRole = 'checkRole';
 
-  // doctor screens
+  /// [Doctor screens]
   static const String doctorHome = 'doctorHome';
   static const String doctorSearch = 'doctorSearch';
   static const String doctorProfile = 'doctorProfile';
   static const String patientScreen = 'patientScreen';
   static const String patientListScreen = 'patientListScreen';
   static const String visitsScreen = 'visitsScreen';
+
+  /// [Student screens]
+  static const String studentHomeScreen = 'studentHomeScreen';
 }

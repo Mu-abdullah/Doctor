@@ -6,6 +6,7 @@ import '../../features/doctor/doctor_search_screen/presentation/views/doctor_sea
 import '../../features/doctor/patient_list_screen/presentation/views/patient_list_screen.dart';
 import '../../features/doctor/patient_screen/presentation/views/patient_screen.dart';
 import '../../features/doctor/visits_screen/presentation/views/visits_screen.dart';
+import '../../features/student/student_home_screen/presentation/views/student_home_screen.dart';
 import '../app/image/image_preview.dart';
 import '../app/language/language_screen.dart';
 import '../app/no_internet/no_internet_screen.dart';
@@ -34,7 +35,7 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return BaseRoute(page: NoInternetScreen());
 
     /////////
-    /////////doctor feature routes////////////
+    /////////[doctor feature routes]////////////
     /////////
 
     case RoutesNames.doctorHome:
@@ -58,7 +59,14 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return BaseRoute(page: VisitsScreen());
 
     /////////
-    /////////user feature routes////////////
+    /////////[Student feature routes]////////////
+    /////////
+
+    case RoutesNames.studentHomeScreen:
+      return BaseRoute(page: const StudentHomeScreen());
+
+    /////////
+    /////////[User feature routes]////////////
     /////////
 
     default:

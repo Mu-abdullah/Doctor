@@ -1,6 +1,6 @@
 class LangKeys {
   //Genral Keys
-  static const String appName = 'app_name';
+  static const String appName = 'appName';
 
   static const String loading = 'loading';
   static const String noInternet = 'noInternet';
@@ -9,6 +9,7 @@ class LangKeys {
   static const String chooseDate = 'chooseDate';
   static const String cancel = 'cancel';
   static const String english = 'english';
+  static const String arabic = 'arabic';
   static const String noDataFound = 'noDataFound';
   static const String error = 'error';
   static const String unavailable = 'unavailable';
@@ -54,5 +55,9 @@ class LangKeys {
   static const String yearsOld = 'yearsOld';
   static const String startRecord = 'startRecord';
   static const String recordDiagnosis = 'recordDiagnosis';
+  static const String stopRecordDiagnosis = 'stopRecordDiagnosis';
   static const String diagnosis = 'diagnosis';
+  static const String treatment = 'treatment';
+  static const String pressAndStart = 'pressAndStart';
+  static const String speechNotAvailable = 'speechNotAvailable';
 }

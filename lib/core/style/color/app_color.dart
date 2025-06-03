@@ -7,6 +7,8 @@ class AppColors {
   static const Color blueAccent = Color(0xFF3B82F6);
   static const Color grey = Color(0xFF6B7280);
   static const Color red = Color(0xFFEF4444);
+
+  /// [Student color]
   static const Color green = Color(0xFF10B981);
   static const Color yellow = Color(0xFFFCD207);
 }

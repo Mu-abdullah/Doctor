@@ -7,6 +7,7 @@
     "chooseDate":   "Choose date",
     "cancel":   "Cancel",
     "english":  "English",
+    "arabic": "Arabic",
     "error":    "An error occurred",
     "noDataFound":  "No data found",
     "unavailable": "Unavailable",
@@ -51,6 +52,10 @@
     "yearsOld":"Years old",
     "startRecord":"Press the button below to start recording the patient's diagnosis. The recording will be automatically transcribed into text.",
     "recordDiagnosis":"Record Diagnosis"   ,
-    "diagnosis":"Diagnosis"  
+    "stopRecordDiagnosis":"Stop Recording"   ,
+    "diagnosis":"Diagnosis",  
+    "treatment":"Treatment",  
+    "pressAndStart":"Press the button and start speaking"  ,
+    "speechNotAvailable":"Speech recognition not available"  
 }
  
