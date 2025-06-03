@@ -1,4 +1,5 @@
-
+import 'package:doctor/core/services/status/gender_status.dart';
+import 'package:doctor/core/style/widgets/patient_card.dart';
 import 'package:flutter/material.dart';
 
 class StudentHomeScreenBody extends StatelessWidget {
@@ -6,6 +7,14 @@ class StudentHomeScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: []);
+    return ListView.builder(
+      itemCount: 20,
+      itemBuilder:
+          (context, index) => PatientCard(
+            name: "Alia",
+            age: "20",
+            gender: GenderStatus.getGender(Gender.female),
+          ),
+    );
   }
 }
