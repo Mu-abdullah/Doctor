@@ -12,6 +12,14 @@
     "error":    "An error occurred",
     "noDataFound":  "No data found",
     "unavailable": "Unavailable",
+    "comingSoon": "Coming soon",
+
+    "####AdminScreen":"",
+    "admin":"Admin",
+    "screens":"Screens",
+    "doctor":"Doctor",
+    "student":"Student",
+    "patient":"Patient",
 
     "####HomeScreen":"",
     "search": "Search",
@@ -40,7 +48,6 @@
 
     "####DoctorSearchScreen":"",
     "patients":"Patients",
-    "patient":"Patient",
 
     "####DoctorProfileScreen":"",
     "about":"About",

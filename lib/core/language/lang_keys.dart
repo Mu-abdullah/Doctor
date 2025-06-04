@@ -14,7 +14,15 @@ class LangKeys {
   static const String noDataFound = 'noDataFound';
   static const String error = 'error';
   static const String unavailable = 'unavailable';
+  static const String comingSoon = 'comingSoon';
 
+  ////[ADMIN SCREEN]
+  static const String admin = 'admin';
+  static const String screens = 'screens';
+  static const String doctor = 'doctor';
+  static const String student = 'student';
+  static const String patient = 'patient';
+  
   ////[HOME SCREEN]
   static const String home = 'home';
   static const String account = 'account';
@@ -42,7 +50,6 @@ class LangKeys {
 
   ///[DOCTOR Search SCREEN]
   static const String patients = 'patients';
-  static const String patient = 'patient';
 
   /// [DOCTOR Profile SCREEN]
   static const String about = 'about';

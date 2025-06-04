@@ -12,6 +12,14 @@
     "error": "حدث خطأ",
     "noDataFound": "لا توجد بيانات",
     "unavailable": "غير متوفر",
+    "comingSoon": "قريبا",
+
+    "####AdminScreen":"",
+    "admin":"ادمن",
+    "screens":"الشاشات",
+    "doctor":"طبيب",
+    "student":"طالب",
+    "patient":"مريض",
 
     "####HomeScreen":"",
     "search": "بحث",
@@ -40,7 +48,6 @@
 
     "####DoctorSearchScreen":"",
     "patients":"المرضى",
-    "patient":"مريض",
 
     "####DoctorProfileScreen":"",
     "about":"عن الطبيب",

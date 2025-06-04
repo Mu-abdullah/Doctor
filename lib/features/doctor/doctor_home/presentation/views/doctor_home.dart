@@ -9,8 +9,8 @@ import '../../../patient_list_screen/presentation/views/patient_list_screen.dart
 import '../widgets/bottom_bar/custom_bottom_navigation_bar.dart';
 
 class DoctorHomeScreen extends StatefulWidget {
-  const DoctorHomeScreen({super.key});
-
+  const DoctorHomeScreen({super.key, this.isAdmin = false});
+  final bool isAdmin;
   @override
   State<DoctorHomeScreen> createState() => _DoctorHomeScreenState();
 }
@@ -42,7 +42,7 @@ class _DoctorHomeScreenState extends State<DoctorHomeScreen> {
         backgroundColor: AppColors.white,
         elevation: 5,
         title: titles[currentIndex],
-        isBack: false,
+        isBack: widget.isAdmin,
       ),
       body: SafeArea(child: pages[currentIndex]),
       bottomNavigationBar: CustomBottomNavigationBar(

@@ -6,6 +6,9 @@ class RoutesNames {
   static const String auth = 'auth';
   static const String checkRole = 'checkRole';
 
+  /// [Admin screens]
+  static const String adminHome = 'adminHome';
+  
   /// [Doctor screens]
   static const String doctorHome = 'doctorHome';
   static const String doctorSearch = 'doctorSearch';

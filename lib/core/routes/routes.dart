@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../features/admin/admin_home/presentation/views/admin_home.dart';
 import '../../features/doctor/doctor_home/presentation/views/doctor_home.dart';
 import '../../features/doctor/doctor_profile_page/presentation/views/doctor_profile_page.dart';
 import '../../features/doctor/doctor_search_screen/presentation/views/doctor_search_screen.dart';
@@ -35,11 +36,19 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return BaseRoute(page: NoInternetScreen());
 
     /////////
+    /////////[admin feature routes]////////////
+    /////////
+    case RoutesNames.adminHome:
+      return BaseRoute(page: const AdminHome());
+
+    /////////
     /////////[doctor feature routes]////////////
     /////////
 
     case RoutesNames.doctorHome:
-      return BaseRoute(page: const DoctorHomeScreen());
+      return BaseRoute(
+        page: DoctorHomeScreen(isAdmin: args?['isAdmin'] as bool? ?? false),
+      );
 
     case RoutesNames.doctorSearch:
       return BaseRoute(
@@ -63,7 +72,9 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
     /////////
 
     case RoutesNames.studentHomeScreen:
-      return BaseRoute(page: const StudentHomeScreen());
+      return BaseRoute(
+        page: StudentHomeScreen(isAdmin: args?['isAdmin'] as bool? ?? false),
+      );
 
     /////////
     /////////[User feature routes]////////////
