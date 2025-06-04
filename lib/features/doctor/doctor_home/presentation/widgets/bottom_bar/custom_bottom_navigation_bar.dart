@@ -2,17 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../../core/style/color/app_color.dart';
+import '../../cubits/bottom_bar_cubit/bottom_bar_cubit.dart';
 import 'bottom_bar_item.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
-  const CustomBottomNavigationBar({
-    super.key,
-    required this.currentIndex,
-    required this.onTap,
-  });
+  const CustomBottomNavigationBar({super.key, required this.cubit});
 
-  final int currentIndex;
-  final Function(int) onTap;
+  final BottomBarCubit cubit;
 
   @override
   Widget build(BuildContext context) {
@@ -34,23 +30,26 @@ class CustomBottomNavigationBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          BottomBarItem(
-            icon: HugeIcons.strokeRoundedHome01,
-            // title: LangKeys.home,
-            isSelected: currentIndex == 0,
-            onTap: () => onTap(0),
+          Expanded(
+            child: BottomBarItem(
+              icon: HugeIcons.strokeRoundedHome01,
+              isSelected: cubit.currentIndex == 0,
+              onTap: () => cubit.onTabTapped(0),
+            ),
           ),
-          BottomBarItem(
-            icon: HugeIcons.strokeRoundedUserGroup,
-            // title: LangKeys.account,
-            isSelected: currentIndex == 1,
-            onTap: () => onTap(1),
+          Expanded(
+            child: BottomBarItem(
+              icon: HugeIcons.strokeRoundedUserGroup,
+              isSelected: cubit.currentIndex == 1,
+              onTap: () => cubit.onTabTapped(1),
+            ),
           ),
-          BottomBarItem(
-            icon: HugeIcons.strokeRoundedSettings01,
-            // title: LangKeys.settings,
-            isSelected: currentIndex == 2,
-            onTap: () => onTap(2),
+          Expanded(
+            child: BottomBarItem(
+              icon: HugeIcons.strokeRoundedSettings01,
+              isSelected: cubit.currentIndex == 2,
+              onTap: () => cubit.onTabTapped(2),
+            ),
           ),
         ],
       ),

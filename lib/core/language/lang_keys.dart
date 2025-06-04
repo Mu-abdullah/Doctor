@@ -18,6 +18,7 @@ class LangKeys {
 
   ////[ADMIN SCREEN]
   static const String admin = 'admin';
+  static const String adminMode = 'adminMode';
   static const String screens = 'screens';
   static const String modes = 'modes';
   static const String doctor = 'doctor';
