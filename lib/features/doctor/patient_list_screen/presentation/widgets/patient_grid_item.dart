@@ -38,6 +38,7 @@ class PatientGridItem extends StatelessWidget {
               ),
 
               AppText("Age", translate: false),
+              AppText("Phone", translate: false),
               AppText("Gender", translate: false),
               AppText("Patient ID", translate: false),
               Spacer(),

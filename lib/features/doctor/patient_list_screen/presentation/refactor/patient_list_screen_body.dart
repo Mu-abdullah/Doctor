@@ -1,21 +1,25 @@
+import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/patient_grid_item.dart';
+import '../widgets/patient_count.dart';
+import '../widgets/patient_grid_view.dart';
 
 class PatientListScreenBody extends StatelessWidget {
   const PatientListScreenBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 5,
-        mainAxisSpacing: 5,
-        childAspectRatio: 3 / 4,
-      ),
-      itemCount: 50,
-      itemBuilder: (context, index) => PatientGridItem(),
+    var isArabic = context.langCode == 'ar' ? true : false;
+    return Stack(
+      children: [
+        Positioned.fill(child: PatientGridView()),
+        Positioned(
+          left: isArabic ? null : 16,
+          right: isArabic ? 16 : null,
+          bottom: 16,
+          child: PatientsCount(count: 50),
+        ),
+      ],
     );
   }
 }

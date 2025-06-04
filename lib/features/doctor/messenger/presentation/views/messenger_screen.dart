@@ -6,19 +6,17 @@ class MessengerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.builder(
-        itemCount: 50,
-        itemBuilder:
-            (context, index) => Padding(
+    return ListView.builder(
+      itemCount: 50,
+      itemBuilder:
+          (context, index) => Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              color: Colors.blue,
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                color: Colors.blue,
-                padding: const EdgeInsets.all(8.0),
-                child: AppText("text", translate: false),
-              ),
+              child: AppText("text", translate: false),
             ),
-      ),
+          ),
     );
   }
 }
