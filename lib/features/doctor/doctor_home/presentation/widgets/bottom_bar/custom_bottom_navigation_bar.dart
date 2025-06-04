@@ -36,7 +36,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
             onTap: () => cubit.onTabTapped(0),
           ),
           BottomBarItem(
-            icon: HugeIcons.strokeRoundedUserGroup,
+            icon: HugeIcons.strokeRoundedMessage02,
             isSelected: cubit.currentIndex == 1,
             onTap: () => cubit.onTabTapped(1),
           ),

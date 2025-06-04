@@ -24,6 +24,8 @@ class LangKeys {
   static const String doctor = 'doctor';
   static const String student = 'student';
   static const String patient = 'patient';
+  static const String client = 'client';
+  static const String newClient = 'newClient';
   
   ////[HOME SCREEN]
   static const String home = 'home';
@@ -32,6 +34,7 @@ class LangKeys {
   static const String search = 'search';
   static const String searchHint = 'searchHint';
   static const String welcome = 'welcome';
+  static const String messenger = 'messenger';
 
   /// [DOCTOR HOME SCREEN]
   static const String entered = 'entered';

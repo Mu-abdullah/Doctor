@@ -21,64 +21,106 @@ class SickCount extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         spacing: 16,
         children: [
-          HomeCountCard(
-            onTap: () {
-              context.pushNamed(RoutesNames.patientScreen);
-            },
-            cardIcon: HugeIcons.strokeRoundedNext,
-            cardTitle: LangKeys.nextVisit,
-            cardCount: "",
-            isHighlighted: true,
-            color: AppColors.blueAccent,
-            textColor: AppColors.white,
-          ),
-          Row(
-            spacing: 10,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              HomeCountCard(
-                onTap: () {
-                  context.pushNamed(RoutesNames.visitsScreen);
-                },
-                cardIcon: HugeIcons.strokeRoundedClock04,
-                cardTitle: LangKeys.waiting,
-                cardCount: "10",
-                isHighlighted: true,
-                color: AppColors.white,
-                textColor: AppColors.black,
-                width: context.width(percent: 0.46),
-              ),
-              HomeCountCard(
-                onTap: () {
-                  context.pushNamed(RoutesNames.visitsScreen);
-                },
-                cardIcon: HugeIcons.strokeRoundedClock04,
-                cardTitle: LangKeys.completed,
-                cardCount: "20",
-                isHighlighted: true,
-                color: AppColors.black,
-                textColor: AppColors.white,
-                width: context.width(percent: 0.46),
-              ),
-            ],
-          ),
-          HomeCountCard(
-            onTap: () {
-              customShowBottomSheet(
-                context: context,
-                widget: NewPatient(),
-                title: LangKeys.registerNewPatient,
-              );
-            },
-            cardIcon: HugeIcons.strokeRoundedAddTeam,
-            cardTitle: LangKeys.registerNewPatient,
-            cardCount: "",
-            isHighlighted: true,
-            color: AppColors.green,
-            textColor: AppColors.black,
-          ),
+          _buildNextVisitCard(context),
+          _buildStatusRow(context),
+          _buildPatientsRow(context),
         ],
       ),
+    );
+  }
+
+  Widget _buildNextVisitCard(BuildContext context) {
+    return HomeCountCard(
+      onTap: () => context.pushNamed(RoutesNames.patientScreen),
+      cardIcon: HugeIcons.strokeRoundedNext,
+      cardTitle: LangKeys.nextVisit,
+      cardCount: "",
+      isHighlighted: true,
+      color: AppColors.blueAccent,
+      textColor: AppColors.white,
+    );
+  }
+
+  Widget _buildStatusRow(BuildContext context) {
+    return Row(
+      spacing: 10,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        _buildCountCard(
+          context: context,
+          onTap: () => context.pushNamed(RoutesNames.visitsScreen),
+          icon: HugeIcons.strokeRoundedClock04,
+          title: LangKeys.waiting,
+          count: "10",
+          color: AppColors.white,
+          textColor: AppColors.black,
+        ),
+        _buildCountCard(
+          context: context,
+          onTap: () => context.pushNamed(RoutesNames.visitsScreen),
+          icon: HugeIcons.strokeRoundedClock04,
+          title: LangKeys.completed,
+          count: "20",
+          color: AppColors.black,
+          textColor: AppColors.white,
+        ),
+      ],
+    );
+  }
+
+  Widget _buildPatientsRow(BuildContext context) {
+    return Row(
+      spacing: 10,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        _buildCountCard(
+          context: context,
+          onTap: () => context.pushNamed(RoutesNames.patientListScreen),
+          icon: HugeIcons.strokeRoundedUserGroup,
+          title: LangKeys.patients,
+          count: "135",
+          color: AppColors.grey,
+          textColor: AppColors.black,
+        ),
+        _buildCountCard(
+          context: context,
+          onTap: () => _showNewPatientSheet(context),
+          icon: HugeIcons.strokeRoundedAddTeam,
+          title: LangKeys.registerNewPatient,
+          count: "",
+          color: AppColors.green,
+          textColor: AppColors.black,
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCountCard({
+    required BuildContext context,
+    required VoidCallback onTap,
+    required IconData icon,
+    required String title,
+    required String count,
+    required Color color,
+    required Color textColor,
+  }) {
+    return HomeCountCard(
+      onTap: onTap,
+      cardIcon: icon,
+      cardTitle: title,
+      cardCount: count,
+      isHighlighted: true,
+      color: color,
+      textColor: textColor,
+      width: context.width(percent: 0.46),
+    );
+  }
+
+  void _showNewPatientSheet(BuildContext context) {
+    customShowBottomSheet(
+      context: context,
+      widget: const NewPatient(),
+      title: LangKeys.registerNewPatient,
     );
   }
 }

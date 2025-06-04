@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/language/lang_keys.dart';
+import '../../../../../core/style/widgets/custom_app_bar.dart';
 import '../refactor/admin_home_body.dart';
 
 class AdminHome extends StatelessWidget {
@@ -7,6 +9,9 @@ class AdminHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: AdminHomeBody()));
+    return Scaffold(
+      appBar: CustomAppBar(title: LangKeys.admin, isBack: false),
+      body: SafeArea(child: AdminHomeBody()),
+    );
   }
 }
