@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/admin_sections/screen_section.dart';
+import '../widgets/admin_sections/mode_section.dart';
 import '../widgets/admin_sections/settings_section.dart';
 
 class AdminHomeBody extends StatelessWidget {
@@ -10,10 +10,7 @@ class AdminHomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      child: Column(
-        spacing: 16,
-        children: [ScreensSection(), SettingsSection()],
-      ),
+      child: Column(spacing: 16, children: [ModeSection(), SettingsSection()]),
     );
   }
 }

@@ -9,13 +9,13 @@ import '../../../../../../core/style/widgets/custom_snack_bar.dart';
 import '../admin_home_custom_button.dart';
 import '../admin_section.dart';
 
-class ScreensSection extends StatelessWidget {
-  const ScreensSection({super.key});
+class ModeSection extends StatelessWidget {
+  const ModeSection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AdminSections(
-      title: LangKeys.screens,
+      title: LangKeys.modes,
       child: Column(
         spacing: 16,
         children: [
@@ -31,6 +31,7 @@ class ScreensSection extends StatelessWidget {
           AdminHomeCustomButton(
             title: LangKeys.student,
             icon: HugeIcons.strokeRoundedStudent,
+            color: AppColors.green,
             onTap:
                 () => context.pushNamed(
                   RoutesNames.studentHomeScreen,
@@ -40,11 +41,12 @@ class ScreensSection extends StatelessWidget {
           AdminHomeCustomButton(
             title: LangKeys.patient,
             icon: HugeIcons.strokeRoundedPatient,
+            color: AppColors.yellow,
             onTap: () {
               CustomSnackbar.showTopSnackBar(
                 context,
                 message: LangKeys.comingSoon,
-                backgroundColor: AppColors.blueAccent,
+                backgroundColor: AppColors.yellow,
                 top: false,
               );
             },
