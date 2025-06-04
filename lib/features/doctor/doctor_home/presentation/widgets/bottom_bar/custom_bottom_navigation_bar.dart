@@ -30,26 +30,20 @@ class CustomBottomNavigationBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Expanded(
-            child: BottomBarItem(
-              icon: HugeIcons.strokeRoundedHome01,
-              isSelected: cubit.currentIndex == 0,
-              onTap: () => cubit.onTabTapped(0),
-            ),
+          BottomBarItem(
+            icon: HugeIcons.strokeRoundedHome01,
+            isSelected: cubit.currentIndex == 0,
+            onTap: () => cubit.onTabTapped(0),
           ),
-          Expanded(
-            child: BottomBarItem(
-              icon: HugeIcons.strokeRoundedUserGroup,
-              isSelected: cubit.currentIndex == 1,
-              onTap: () => cubit.onTabTapped(1),
-            ),
+          BottomBarItem(
+            icon: HugeIcons.strokeRoundedUserGroup,
+            isSelected: cubit.currentIndex == 1,
+            onTap: () => cubit.onTabTapped(1),
           ),
-          Expanded(
-            child: BottomBarItem(
-              icon: HugeIcons.strokeRoundedSettings01,
-              isSelected: cubit.currentIndex == 2,
-              onTap: () => cubit.onTabTapped(2),
-            ),
+          BottomBarItem(
+            icon: HugeIcons.strokeRoundedSettings01,
+            isSelected: cubit.currentIndex == 2,
+            onTap: () => cubit.onTabTapped(2),
           ),
         ],
       ),

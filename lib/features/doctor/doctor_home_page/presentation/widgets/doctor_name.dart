@@ -18,33 +18,29 @@ class DoctorName extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+        child: Row(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      AppText(LangKeys.welcome),
-                      AppText(
-                        "Doctor Name",
-                        translate: false,
-                        isTitle: true,
-                        isBold: true,
-                      ),
-                    ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppText(LangKeys.welcome),
+                  AppText(
+                    "Doctor Name",
+                    translate: false,
+                    isTitle: true,
+                    isBold: true,
                   ),
-                ),
-                AppText(
-                  TimeRefactor(
-                    DateTime.now().toString(),
-                  ).timeString(lang: context.langCode),
-                  maxLines: 2,
-                  translate: false,
-                  textAlign: TextAlign.end,
-                ),
-              ],
+                ],
+              ),
+            ),
+            AppText(
+              TimeRefactor(
+                DateTime.now().toString(),
+              ).timeString(lang: context.langCode),
+              maxLines: 2,
+              translate: false,
+              textAlign: TextAlign.end,
             ),
           ],
         ),
