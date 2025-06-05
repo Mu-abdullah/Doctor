@@ -7,6 +7,9 @@
     "chooseDate": "اختر التاريخ",
     "requiredValue": "مطلوب",
     "phoneError": "رقم الهاتف غير صحيح",
+    "mailError": "البريد الالكتروني غير صحيح",
+    "passwordError": "كلمة المرور غير صحيحة",
+    "passwordShort": "كلمة المرور قصيرة",
     "cancel": "إلغاء",
     "english": "الإنجليزية",
     "arabic": "العربية",
@@ -31,6 +34,8 @@
     "name":"الاسم",
     "title":"اللقب",
     "aboutDr":"عن الطبيب",
+    "previous":"السابق",
+    "next":"التالي",
 
 
     "####HomeScreen":"",

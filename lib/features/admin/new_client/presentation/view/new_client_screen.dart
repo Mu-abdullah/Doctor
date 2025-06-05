@@ -1,62 +1,29 @@
-import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
-import 'package:hugeicons/hugeicons.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/custom_app_bar.dart';
-import '../../../admin_home/presentation/widgets/admin_section.dart';
-import '../widgets/new_client_text_form_felid.dart';
+import '../cubits/new_client_cubit/new_client_cubit.dart';
+import '../refactor/new_client_screen_body.dart';
 
 class NewClientScreen extends StatelessWidget {
   const NewClientScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(title: LangKeys.newClient),
-      body: Padding(
-        padding: AppPadding.symmetricPadding(),
-        child: Column(
-          children: [
-            AdminSections(
-              title: LangKeys.personalInformation,
-              child: Column(
-                spacing: 16,
-                children: [
-                  NewClientTextFormFelid(
-                    controller: TextEditingController(),
-                    type: TextInputType.text,
-                    label: LangKeys.name,
-                    icon: HugeIcons.strokeRoundedUser,
-                  ),
-                  NewClientTextFormFelid(
-                    controller: TextEditingController(),
-                    type: TextInputType.multiline,
-                    label: LangKeys.aboutDr,
-                    icon: HugeIcons.strokeRoundedStudentCard,
-                  ),
-                  NewClientTextFormFelid(
-                    controller: TextEditingController(),
-                    type: TextInputType.number,
-                    label: LangKeys.phone,
-                    maxLength: 11,
-                    maxLines: 1,
-                    icon: HugeIcons.strokeRoundedSmartPhone01,
-                    validate: (c) {
-                      if (c!.isEmpty) {
-                        return context.translate(LangKeys.requiredValue);
-                      }
-                      if (c.length < 11) {
-                        return context.translate(LangKeys.phoneError);
-                      }
-                      return null;
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ],
+    return BlocProvider(
+      create: (_) => NewClientCubit(),
+      child: BlocListener<NewClientCubit, NewClientState>(
+        listener: (context, state) {
+          NewClientCubit.get(context).controller.animateToPage(
+            state.currentPage,
+            duration: const Duration(milliseconds: 300),
+            curve: Curves.easeInOut,
+          );
+        },
+        child: Scaffold(
+          appBar: CustomAppBar(title: LangKeys.newClient),
+          body: const NewClientScreenBody(),
         ),
       ),
     );

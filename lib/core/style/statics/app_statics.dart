@@ -24,3 +24,9 @@ class AppPadding {
 class Statics {
   static const double buttonsHeight = 70;
 }
+
+class Validation {
+  static var regExp = RegExp(
+    r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
+  );
+}

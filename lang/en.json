@@ -7,6 +7,9 @@
     "chooseDate":   "Choose date",
     "requiredValue":   "Required",
     "phoneError":   "Phone number is not valid",
+    "mailError":   "Email is not valid",
+    "passwordError": "Password is not valid",
+    "passwordShort": "Password is too short",
     "cancel":   "Cancel",
     "english":  "English",
     "arabic": "Arabic",
@@ -31,6 +34,8 @@
     "name":"Name",
     "title":"Title",
     "aboutDr":"About Dr.",
+    "previous":"Previous",
+    "next":"Next",
 
     "####HomeScreen":"",
     "search": "Search",

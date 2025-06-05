@@ -17,8 +17,8 @@ void selectData({
     layoutOrientation: TextDirection.rtl,
     dateOrder: DatePickerDateOrder.dmy,
     initialDateTime: DateTime.now(),
-    maxDateTime: DateTime(2030),
-    minDateTime: DateTime(1980),
+    maxDateTime: DateTime(2050),
+    minDateTime: DateTime(1950),
     pickerTextStyle: customTextStyle(context),
     buttonContent: const AppText(
       LangKeys.chooseDate,

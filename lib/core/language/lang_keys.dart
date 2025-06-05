@@ -9,6 +9,9 @@ class LangKeys {
   static const String chooseDate = 'chooseDate';
   static const String requiredValue = 'requiredValue';
   static const String phoneError = 'phoneError';
+  static const String mailError = 'mailError';
+  static const String passwordError = 'passwordError';
+  static const String passwordShort = 'passwordError';
   static const String cancel = 'cancel';
   static const String english = 'english';
   static const String arabic = 'arabic';
@@ -33,6 +36,8 @@ class LangKeys {
   static const String name = 'name';
   static const String title = 'title';
   static const String aboutDr = 'aboutDr';
+  static const String next = 'next';
+  static const String previous = 'previous';
   
 
 

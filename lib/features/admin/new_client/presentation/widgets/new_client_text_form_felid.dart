@@ -15,6 +15,7 @@ class NewClientTextFormFelid extends StatelessWidget {
     this.onTap,
     this.maxLines,
     this.maxLength,
+    this.isPassword = false,
   });
   final TextEditingController controller;
   final String label;
@@ -24,6 +25,7 @@ class NewClientTextFormFelid extends StatelessWidget {
   final void Function()? onTap;
   final int? maxLines;
   final int? maxLength;
+  final bool isPassword;
   @override
   Widget build(BuildContext context) {
     return AppTextFormField(
@@ -32,6 +34,7 @@ class NewClientTextFormFelid extends StatelessWidget {
       type: type,
       label: label,
       hint: label,
+      isPassword: isPassword,
       maxLines: maxLines,
       maxLength: maxLength,
       validate:

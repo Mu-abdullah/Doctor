@@ -89,7 +89,7 @@ class _AppTextFormFieldState extends State<AppTextFormField> {
       textCapitalization: widget.capitalization,
       textDirection: widget.direction,
       keyboardType: widget.type,
-      maxLines: widget.maxLines,
+      maxLines: widget.isPassword == true ? 1 : widget.maxLines,
       focusNode: _focusNode,
       decoration: _decoration(context),
       inputFormatters: widget.inputFormatters,
