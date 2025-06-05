@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/admin_sections/mode_section.dart';
-import '../widgets/admin_sections/new_client.dart';
+import '../widgets/admin_sections/clients_section.dart';
 import '../widgets/admin_sections/settings_section.dart';
 
 class AdminHomeBody extends StatelessWidget {
@@ -14,7 +14,7 @@ class AdminHomeBody extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Column(
           spacing: 16,
-          children: [ModeSection(), NewClientSection(), SettingsSection()],
+          children: [ModeSection(), ClientsSection(), SettingsSection()],
         ),
       ),
     );

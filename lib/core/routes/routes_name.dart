@@ -8,6 +8,7 @@ class RoutesNames {
 
   /// [Admin screens]
   static const String adminHome = 'adminHome';
+  static const String newClient = 'newClient';
   
   /// [Doctor screens]
   static const String doctorHome = 'doctorHome';

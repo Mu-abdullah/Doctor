@@ -1,13 +1,15 @@
+import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../../core/language/lang_keys.dart';
+import '../../../../../../core/routes/routes_name.dart';
 import '../../../../../../core/style/color/app_color.dart';
 import '../admin_home_custom_button.dart';
 import '../admin_section.dart';
 
-class NewClientSection extends StatelessWidget {
-  const NewClientSection({super.key});
+class ClientsSection extends StatelessWidget {
+  const ClientsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,9 @@ class NewClientSection extends StatelessWidget {
             textColor: AppColors.white,
             title: LangKeys.newClient,
             icon: HugeIcons.strokeRoundedNewReleases,
-            onTap: () {},
+            onTap: () {
+              context.pushNamed(RoutesNames.newClient);
+            },
           ),
         ],
       ),
