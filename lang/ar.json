@@ -37,6 +37,11 @@
     "previous":"السابق",
     "next":"التالي",
 
+    "####ChatScreen":"",
+    "message":"رسالة",
+    "send":"ارسال",
+    "typeYourMessage":"اكتب رسالتك...",
+    
 
     "####HomeScreen":"",
     "search": "بحث",

@@ -17,6 +17,7 @@ class RoutesNames {
   static const String patientScreen = 'patientScreen';
   static const String patientListScreen = 'patientListScreen';
   static const String visitsScreen = 'visitsScreen';
+  static const String chatScreen = 'chatScreen';
 
   /// [Student screens]
   static const String studentHomeScreen = 'studentHomeScreen';

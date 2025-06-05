@@ -37,6 +37,11 @@
     "previous":"Previous",
     "next":"Next",
 
+    "####ChatScreen":"",
+    "message":"Message",
+    "send":"Send",
+    "typeYourMessage":"Type your message...",
+
     "####HomeScreen":"",
     "search": "Search",
      "welcome": "Welcome,",

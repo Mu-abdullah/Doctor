@@ -31,7 +31,7 @@ class LangKeys {
   static const String client = 'client';
   static const String newClient = 'newClient';
   
-/// [New Client Screen]
+  /// [New Client Screen]
   static const String personalInformation = 'personalInformation';
   static const String name = 'name';
   static const String title = 'title';
@@ -39,7 +39,11 @@ class LangKeys {
   static const String next = 'next';
   static const String previous = 'previous';
   
-
+  /// [Chat Screen]
+  static const String message = 'message';
+  static const String send = 'send';
+  static const String typeYourMessage = 'typeYourMessage';
+  
 
   ////[HOME SCREEN]
   static const String home = 'home';

@@ -5,6 +5,7 @@ import '../../features/admin/new_client/presentation/view/new_client_screen.dart
 import '../../features/doctor/doctor_home/presentation/views/doctor_home.dart';
 import '../../features/doctor/doctor_profile_page/presentation/views/doctor_profile_page.dart';
 import '../../features/doctor/doctor_search_screen/presentation/views/doctor_search_screen.dart';
+import '../../features/doctor/messenger/presentation/widgets/chat_screen/chat_screen.dart';
 import '../../features/doctor/patient_list_screen/presentation/views/patient_list_screen.dart';
 import '../../features/doctor/patient_screen/presentation/views/patient_screen.dart';
 import '../../features/doctor/visits_screen/presentation/views/visits_screen.dart';
@@ -71,6 +72,9 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
     case RoutesNames.visitsScreen:
       return BaseRoute(page: VisitsScreen());
+
+    case RoutesNames.chatScreen:
+      return BaseRoute(page: ChatScreen());
 
     /////////
     /////////[Student feature routes]////////////

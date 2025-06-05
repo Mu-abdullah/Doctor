@@ -59,7 +59,7 @@ class SickCount extends StatelessWidget {
         _buildCountCard(
           context: context,
           onTap: () => context.pushNamed(RoutesNames.visitsScreen),
-          icon: HugeIcons.strokeRoundedClock04,
+          icon: HugeIcons.strokeRoundedCheckmarkCircle01,
           title: LangKeys.completed,
           count: "20",
           color: AppColors.black,
@@ -81,7 +81,7 @@ class SickCount extends StatelessWidget {
           title: LangKeys.patients,
           count: "135",
           color: AppColors.grey,
-          textColor: AppColors.black,
+          textColor: AppColors.white,
         ),
         _buildCountCard(
           context: context,
@@ -90,7 +90,7 @@ class SickCount extends StatelessWidget {
           title: LangKeys.registerNewPatient,
           count: "",
           color: AppColors.green,
-          textColor: AppColors.black,
+          textColor: AppColors.white,
         ),
       ],
     );
