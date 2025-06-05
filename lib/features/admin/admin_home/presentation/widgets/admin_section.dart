@@ -5,10 +5,15 @@ import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/app_text.dart';
 
 class AdminSections extends StatelessWidget {
-  const AdminSections({super.key, required this.title, required this.child});
+  const AdminSections({
+    super.key,
+    required this.title,
+    required this.child,
+    this.icon,
+  });
   final String title;
   final Widget child;
-
+  final IconData? icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -29,12 +34,22 @@ class AdminSections extends StatelessWidget {
         spacing: 16,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          AppText(
-            title,
-            isBold: true,
-            isTitle: true,
-            fontSize: 20,
-            textAlign: TextAlign.start,
+          Row(
+            spacing: icon == null ? 0 : 16,
+            children: [
+              icon == null
+                  ? const SizedBox()
+                  : Icon(icon, color: AppColors.black),
+              Expanded(
+                child: AppText(
+                  title,
+                  isBold: true,
+                  isTitle: true,
+                  maxLines: 3,
+                  textAlign: TextAlign.start,
+                ),
+              ),
+            ],
           ),
           child,
         ],

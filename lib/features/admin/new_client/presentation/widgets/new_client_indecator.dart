@@ -215,13 +215,12 @@ class _NavigationButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               textDirection: isReversed ? TextDirection.rtl : TextDirection.ltr,
               children: [
-                Icon(icon, size: 20, color: AppColors.blueAccent),
-
                 AppText(
                   label,
                   fontWeight: FontWeight.w600,
                   color: AppColors.blueAccent,
                 ),
+                Icon(icon, size: 20, color: AppColors.blueAccent),
                 if (showProgress && progress != null) ...[
                   SizedBox(
                     width: 24,

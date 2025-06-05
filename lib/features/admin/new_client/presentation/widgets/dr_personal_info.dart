@@ -6,6 +6,7 @@ import '../../../../../core/functions/select_data.dart';
 import '../../../../../core/language/lang_keys.dart';
 import '../../../../../core/style/statics/app_statics.dart';
 import '../../../admin_home/presentation/widgets/admin_section.dart';
+import 'new_client_gender.dart';
 import 'new_client_text_form_felid.dart';
 
 class DrPersonalInformation extends StatelessWidget {
@@ -23,6 +24,7 @@ class DrPersonalInformation extends StatelessWidget {
       padding: AppPadding.symmetricPadding(),
       child: AdminSections(
         title: LangKeys.personalInformation,
+        icon: HugeIcons.strokeRoundedUserAccount,
         child: Column(
           spacing: 16,
           children: [
@@ -91,6 +93,7 @@ class DrPersonalInformation extends StatelessWidget {
                 return null;
               },
             ),
+            NewClientGender(),
           ],
         ),
       ),

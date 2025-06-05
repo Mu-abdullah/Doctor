@@ -11,6 +11,7 @@ void selectData({
   required BuildContext context,
   required TextEditingController controller,
   required String content,
+  String format = 'yyyy-MM-dd',
 }) {
   var date = BottomPicker.date(
     pickerTitle: AppText(content),
@@ -31,7 +32,7 @@ void selectData({
     ),
     onChange: (index) {},
     onSubmit: (index) async {
-      var date = convertDateToArabic(index.toString());
+      var date = convertDateToArabic(index.toString(), format: format);
       controller.text = date;
     },
     bottomPickerTheme: BottomPickerTheme.blue,
@@ -40,8 +41,8 @@ void selectData({
   date.show(context);
 }
 
-String convertDateToArabic(String dateString) {
+String convertDateToArabic(String dateString, {required String format}) {
   DateTime dateTime = DateTime.parse(dateString);
-  String formattedDate = intl.DateFormat('dd-MM-yyyy').format(dateTime);
+  String formattedDate = intl.DateFormat(format).format(dateTime);
   return formattedDate;
 }

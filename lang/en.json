@@ -36,6 +36,12 @@
     "aboutDr":"About Dr.",
     "previous":"Previous",
     "next":"Next",
+    "professionalInformation":"Professional Information",
+    "specialization":"Specialization",
+    "degree":"Degree",
+    "university":"University",
+    "graduation":"Graduation",
+    "city":"City",
 
     "####ChatScreen":"",
     "message":"Message",

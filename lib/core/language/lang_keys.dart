@@ -38,6 +38,12 @@ class LangKeys {
   static const String aboutDr = 'aboutDr';
   static const String next = 'next';
   static const String previous = 'previous';
+  static const String professionalInformation = 'professionalInformation';
+  static const String specialization = 'specialization';
+  static const String degree = 'degree';
+  static const String university = 'university';
+  static const String graduation = 'graduation';
+  static const String city = 'city';
   
   /// [Chat Screen]
   static const String message = 'message';

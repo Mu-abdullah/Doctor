@@ -36,6 +36,12 @@
     "aboutDr":"عن الطبيب",
     "previous":"السابق",
     "next":"التالي",
+    "professionalInformation":"المعلومات الوظيفية",
+    "specialization":"التخصص",
+    "degree":"المستوى",
+    "university":"الجامعة",
+    "graduation":"التخرج",
+    "city":"المدينة",
 
     "####ChatScreen":"",
     "message":"رسالة",

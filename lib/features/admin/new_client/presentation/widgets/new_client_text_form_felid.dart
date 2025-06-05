@@ -16,6 +16,7 @@ class NewClientTextFormFelid extends StatelessWidget {
     this.maxLines,
     this.maxLength,
     this.isPassword = false,
+    this.enabled = true,
   });
   final TextEditingController controller;
   final String label;
@@ -26,9 +27,10 @@ class NewClientTextFormFelid extends StatelessWidget {
   final int? maxLines;
   final int? maxLength;
   final bool isPassword;
+  final bool enabled;
   @override
   Widget build(BuildContext context) {
-    return AppTextFormField(
+    return AppTextFormField(enabled: enabled,
       controller: controller,
       prefix: icon == null ? null : Icon(icon),
       type: type,

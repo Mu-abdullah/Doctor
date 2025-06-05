@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hugeicons/hugeicons.dart';
 
-import '../../../../../core/language/lang_keys.dart';
 import '../../../../../core/services/status/gender_status.dart';
-import '../../../../../core/style/color/app_color.dart';
-import '../../../../../core/style/widgets/app_text.dart';
+import '../../../../../core/style/widgets/custom_gender.dart';
 import '../cubits/register_new_patient_cubit/register_new_patient_cubit.dart';
 
 class NewPatientGender extends StatefulWidget {
@@ -18,40 +15,15 @@ class _NewPatientGenderState extends State<NewPatientGender> {
   Gender? selectedGender;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(HugeIcons.strokeRoundedMan, color: AppColors.blueAccent),
-        Expanded(
-          child: RadioListTile<Gender>(
-            title: AppText(LangKeys.male),
-            value: Gender.male,
-            groupValue: selectedGender,
-            activeColor: AppColors.blueAccent,
-            onChanged: (Gender? value) {
-              setState(() {
-                selectedGender = value;
-                widget.cubit.gender = GenderStatus.getGender(Gender.male);
-              });
-            },
-          ),
-        ),
-        SizedBox(height: 50, child: VerticalDivider(color: Colors.grey)),
-        Icon(HugeIcons.strokeRoundedWoman, color: AppColors.pink),
-        Expanded(
-          child: RadioListTile<Gender>(
-            title: AppText(LangKeys.female),
-            value: Gender.female,
-            activeColor: AppColors.pink,
-            groupValue: selectedGender,
-            onChanged: (Gender? value) {
-              setState(() {
-                selectedGender = value;
-                widget.cubit.gender = GenderStatus.getGender(Gender.female);
-              });
-            },
-          ),
-        ),
-      ],
+    return GenderChoose(
+      groupValue: selectedGender,
+      onChanged: (value) {
+        setState(() {
+          selectedGender = value;
+          debugPrint(GenderStatus.getGender(selectedGender!));
+          widget.cubit.gender = GenderStatus.getGender(selectedGender!);
+        });
+      },
     );
   }
 }

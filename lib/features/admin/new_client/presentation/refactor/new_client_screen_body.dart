@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../cubits/new_client_cubit/new_client_cubit.dart';
-import '../widgets/new_clent_indecator.dart';
+import '../widgets/new_client_indecator.dart';
 
 class NewClientScreenBody extends StatelessWidget {
   const NewClientScreenBody({super.key});

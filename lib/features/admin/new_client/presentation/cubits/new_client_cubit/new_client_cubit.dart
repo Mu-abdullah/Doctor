@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../widgets/dr_personal_info.dart';
+import '../../widgets/professional_info.dart';
 
 part 'new_client_state.dart';
 
@@ -15,9 +16,7 @@ class NewClientCubit extends Cubit<NewClientState> {
 
   final List<Widget> pages = [
     DrPersonalInformation(),
-    DrPersonalInformation(),
-    DrPersonalInformation(),
-    DrPersonalInformation(),
+    ProfessionalInformation(),
   ];
 
   void goToPage(int index) {
