@@ -16,6 +16,7 @@ class ModeSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdminSections(
       title: LangKeys.modes,
+      icon: HugeIcons.strokeRoundedChangeScreenMode,
       child: Column(
         spacing: 16,
         children: [

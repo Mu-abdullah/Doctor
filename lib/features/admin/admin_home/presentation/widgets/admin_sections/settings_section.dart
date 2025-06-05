@@ -15,6 +15,7 @@ class SettingsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdminSections(
       title: LangKeys.settings,
+      icon: HugeIcons.strokeRoundedSettings01,
       child: Column(
         children: [
           AdminHomeCustomButton(

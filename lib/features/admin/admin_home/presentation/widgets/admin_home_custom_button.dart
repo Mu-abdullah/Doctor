@@ -42,7 +42,7 @@ class AdminHomeCustomButton extends StatelessWidget {
                 spacing: 16,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  AppText(title, fontSize: 24, isBold: true, color: textColor),
+                  AppText(title, isTitle: true, isBold: true, color: textColor),
                   Icon(icon, color: textColor),
                 ],
               ),

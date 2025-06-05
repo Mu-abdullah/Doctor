@@ -15,6 +15,7 @@ class ClientsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return AdminSections(
       title: LangKeys.client,
+      icon: HugeIcons.strokeRoundedUserGroup,
       child: Column(
         children: [
           AdminHomeCustomButton(
