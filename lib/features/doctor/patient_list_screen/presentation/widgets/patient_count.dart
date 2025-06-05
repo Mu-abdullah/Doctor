@@ -17,7 +17,7 @@ class PatientsCount extends StatelessWidget {
         color: AppColors.blueAccent.withValues(alpha: 0.5),
         borderRadius: AppBorderRadius.mediumRadius,
       ),
-      padding: const EdgeInsets.all(8),
+      padding: AppPadding.smallPadding,
       child: AppText(
         "$count ${context.translate(LangKeys.patients)}",
         isTitle: true,

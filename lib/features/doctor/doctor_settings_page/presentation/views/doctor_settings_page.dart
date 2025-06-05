@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../core/style/statics/app_statics.dart';
 import '../cubits/doctor_setting_cubit/doctor_setting_cubit.dart';
 import '../refactor/doctor_settings_page_body.dart';
 
@@ -12,7 +13,7 @@ class DoctorSettingsPage extends StatelessWidget {
     return BlocProvider(
       create: (context) => DoctorSettingCubit(isStudent: isStudent),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: AppPadding.symmetricPadding(),
         child: SingleChildScrollView(child: DoctorSettingsPageBody()),
       ),
     );

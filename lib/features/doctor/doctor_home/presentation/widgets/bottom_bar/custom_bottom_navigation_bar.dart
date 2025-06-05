@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../../core/style/color/app_color.dart';
+import '../../../../../../core/style/statics/app_statics.dart';
 import '../../cubits/bottom_bar_cubit/bottom_bar_cubit.dart';
 import 'bottom_bar_item.dart';
 
@@ -14,8 +15,8 @@ class CustomBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      margin: const EdgeInsets.all(8),
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      margin: AppPadding.smallPadding,
+      padding: AppPadding.symmetricPadding(vertical: 0),
       decoration: BoxDecoration(
         color: AppColors.blueAccent,
         borderRadius: BorderRadius.circular(16),

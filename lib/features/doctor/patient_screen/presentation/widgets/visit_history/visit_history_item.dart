@@ -29,7 +29,7 @@ class VistiHistoryItem extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding:AppPadding.symmetricPadding(),
         child: Row(
           spacing: 16,
           children: [

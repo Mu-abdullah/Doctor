@@ -8,6 +8,7 @@ class LangKeys {
   static const String changeLanguage = 'changeLanguage';
   static const String chooseDate = 'chooseDate';
   static const String requiredValue = 'requiredValue';
+  static const String phoneError = 'phoneError';
   static const String cancel = 'cancel';
   static const String english = 'english';
   static const String arabic = 'arabic';
@@ -27,6 +28,14 @@ class LangKeys {
   static const String client = 'client';
   static const String newClient = 'newClient';
   
+/// [New Client Screen]
+  static const String personalInformation = 'personalInformation';
+  static const String name = 'name';
+  static const String title = 'title';
+  static const String aboutDr = 'aboutDr';
+  
+
+
   ////[HOME SCREEN]
   static const String home = 'home';
   static const String account = 'account';

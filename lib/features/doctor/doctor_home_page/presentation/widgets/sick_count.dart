@@ -6,6 +6,7 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../../../core/language/lang_keys.dart';
 import '../../../../../core/routes/routes_name.dart';
 import '../../../../../core/style/color/app_color.dart';
+import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/custom_bottom_sheet.dart';
 import '../../../new_patient/presentation/views/new_patient.dart';
 import 'home_count_card.dart';
@@ -16,7 +17,7 @@ class SickCount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: AppPadding.smallPadding,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         spacing: 16,

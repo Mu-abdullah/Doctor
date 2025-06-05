@@ -17,12 +17,13 @@ class AppTextFormField extends StatefulWidget {
     this.label,
     this.suffix,
     this.isPassword = false,
-    this.maxLines = 1,
+    this.maxLines,
     this.onChange,
     this.onSaved,
     this.onSubmitted,
     this.onTap,
     this.maxLength,
+    this.minLength,
     this.direction,
     this.enabled = true,
     this.capitalization = TextCapitalization.none,
@@ -40,8 +41,9 @@ class AppTextFormField extends StatefulWidget {
   final TextDirection? direction;
   final TextEditingController controller;
   final TextInputType type;
-  final int maxLines;
+  final int? maxLines;
   final int? maxLength;
+  final int? minLength;
   final TextCapitalization capitalization;
   final void Function()? onTap;
   final void Function(String)? onChange;
@@ -80,6 +82,7 @@ class _AppTextFormFieldState extends State<AppTextFormField> {
       onTap: widget.onTap,
       onFieldSubmitted: widget.onSubmitted,
       maxLength: widget.maxLength,
+      minLines: widget.minLength,
       validator: widget.validate,
       obscureText: widget.isPassword,
       controller: widget.controller,

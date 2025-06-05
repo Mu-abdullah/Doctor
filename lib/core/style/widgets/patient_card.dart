@@ -5,6 +5,7 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../language/lang_keys.dart';
 import '../../routes/routes_name.dart';
 import '../../services/status/gender_status.dart';
+import '../statics/app_statics.dart';
 import 'app_text.dart';
 
 class PatientCard extends StatelessWidget {
@@ -15,7 +16,7 @@ class PatientCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: AppPadding.smallPadding,
       child: InkWell(
         borderRadius: BorderRadius.circular(8),
         onTap: () => context.pushNamed(RoutesNames.patientScreen),

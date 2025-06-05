@@ -32,7 +32,7 @@ class DoctorProfilePageBody extends StatelessWidget {
                   ),
                 ],
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: AppPadding.symmetricPadding(),
               child: DoctorInfo(),
             ),
           ),

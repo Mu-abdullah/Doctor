@@ -5,6 +5,7 @@ import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../core/language/lang_keys.dart';
 import '../../../../../core/routes/routes_name.dart';
+import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/app_button.dart';
 import '../../../../../core/style/widgets/app_text_form_felid.dart';
 
@@ -14,7 +15,7 @@ class SearchFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: AppPadding.symmetricPadding(vertical: 0),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),

@@ -24,7 +24,7 @@ class PatientGridItem extends StatelessWidget {
         elevation: 2,
         semanticContainer: true,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          padding: AppPadding.symmetricPadding(),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

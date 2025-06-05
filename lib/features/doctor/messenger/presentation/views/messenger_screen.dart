@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../core/style/color/app_color.dart';
+import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/app_text.dart';
 
 class MessengerScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class MessengerScreen extends StatelessWidget {
       itemCount: 50,
       itemBuilder: (context, index) {
         return Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: AppPadding.smallPadding,
           child: Container(
             decoration: BoxDecoration(
               color: AppColors.blueAccent.withValues(alpha: 0.1),

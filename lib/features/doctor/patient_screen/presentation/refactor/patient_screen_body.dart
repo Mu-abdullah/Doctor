@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/style/statics/app_statics.dart';
 import '../widgets/last_visit/last_visit.dart';
 import '../widgets/patient_info.dart';
 import '../widgets/visit_history/visit_history.dart';
@@ -11,7 +12,7 @@ class PatientScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: AppPadding.symmetricPadding(),
         child: Column(
           spacing: 24,
           crossAxisAlignment: CrossAxisAlignment.start,

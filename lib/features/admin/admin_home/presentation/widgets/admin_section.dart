@@ -15,10 +15,18 @@ class AdminSections extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: AppBorderRadius.mediumRadius,
         color: AppColors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.3),
+            blurRadius: 10,
+            offset: const Offset(0, 5),
+          ),
+        ],
       ),
+      padding: const EdgeInsets.all(16),
 
       child: Column(
-        spacing: 8,
+        spacing: 16,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           AppText(

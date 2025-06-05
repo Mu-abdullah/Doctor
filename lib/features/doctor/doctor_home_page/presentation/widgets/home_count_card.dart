@@ -113,7 +113,7 @@ class _HomeCardState extends State<HomeCountCard>
                       ),
                     ),
                   Padding(
-                    padding: const EdgeInsets.all(16),
+                    padding: AppPadding.mediumPadding,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [

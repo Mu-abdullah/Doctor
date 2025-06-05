@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/functions/timestamp_to_time.dart';
 import '../../../../../core/language/lang_keys.dart';
+import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/app_text.dart';
 
 class DoctorName extends StatelessWidget {
@@ -16,7 +17,7 @@ class DoctorName extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: AppPadding.symmetricPadding(),
         child: Row(
           children: [
             Expanded(

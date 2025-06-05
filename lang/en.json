@@ -6,6 +6,7 @@
     "changeLanguage":   "Change language",
     "chooseDate":   "Choose date",
     "requiredValue":   "Required",
+    "phoneError":   "Phone number is not valid",
     "cancel":   "Cancel",
     "english":  "English",
     "arabic": "Arabic",
@@ -24,6 +25,12 @@
     "patient":"Patient",
     "client":"Client",
     "newClient":"New Client",
+
+    "####newClientScreen":"",
+    "personalInformation":"Personal Information",
+    "name":"Name",
+    "title":"Title",
+    "aboutDr":"About Dr.",
 
     "####HomeScreen":"",
     "search": "Search",

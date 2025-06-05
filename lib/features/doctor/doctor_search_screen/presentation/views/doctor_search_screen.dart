@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../core/language/lang_keys.dart';
+import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/widgets/app_text_form_felid.dart';
 import '../../../../../core/style/widgets/custom_app_bar.dart';
 import '../../../../../core/style/widgets/patient_card.dart';
@@ -14,7 +15,7 @@ class DoctorSearchScreen extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(title: LangKeys.search),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: AppPadding.symmetricPadding(),
         child: Column(
           children: [
             AppTextFormField(

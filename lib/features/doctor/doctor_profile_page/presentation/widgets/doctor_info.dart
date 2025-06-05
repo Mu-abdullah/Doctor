@@ -24,6 +24,7 @@ class DoctorInfo extends StatelessWidget {
             color: AppColors.white,
           ),
           AppText("Cardiologist", translate: false, color: AppColors.white),
+          AppText("01282146020", translate: false, color: AppColors.white),
           AppText(
             LangKeys.about,
             isTitle: true,
@@ -36,6 +37,14 @@ class DoctorInfo extends StatelessWidget {
             maxLines: 20,
             color: AppColors.white,
           ),
+          AppText(
+            "More than 7 years of experience",
+            translate: false,
+
+            isBold: true,
+            color: AppColors.white,
+          ),
+
           Row(
             children: [
               Expanded(

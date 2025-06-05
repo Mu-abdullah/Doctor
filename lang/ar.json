@@ -6,6 +6,7 @@
     "changeLanguage": "تغيير اللغة",
     "chooseDate": "اختر التاريخ",
     "requiredValue": "مطلوب",
+    "phoneError": "رقم الهاتف غير صحيح",
     "cancel": "إلغاء",
     "english": "الإنجليزية",
     "arabic": "العربية",
@@ -24,6 +25,13 @@
     "patient":"مريض",
     "client":"عميل",
     "newClient":"عميل جديد",
+
+    "####newClientScreen":"",
+    "personalInformation":"المعلومات الشخصية",
+    "name":"الاسم",
+    "title":"اللقب",
+    "aboutDr":"عن الطبيب",
+
 
     "####HomeScreen":"",
     "search": "بحث",
