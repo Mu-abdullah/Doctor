@@ -102,4 +102,7 @@ class LangKeys {
   static const String male = 'male';
   static const String female = 'female';
   static const String register = 'register';
+
+  /// [Student Screen]
+  static const String upgrade = 'upgrade';
 }

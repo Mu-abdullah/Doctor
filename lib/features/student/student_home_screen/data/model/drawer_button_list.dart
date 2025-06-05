@@ -16,5 +16,12 @@ class DrawerButtonListItems {
         context.pushNamed(RoutesNames.language);
       },
     ),
+    DrawerButtonModel(
+      title: LangKeys.upgrade,
+      icon: HugeIcons.strokeRoundedSquareArrowUp01,
+      onTap: () {
+        context.pop();
+      },
+    ),
   ];
 }

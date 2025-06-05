@@ -97,6 +97,9 @@
     "selectGender":"Select Gender",
     "male":"Male",
     "female":"Female",
-    "register":"Register"
+    "register":"Register",
+
+    "####StudentScreen":"",
+    "upgrade":"Upgrade"
 }
  
