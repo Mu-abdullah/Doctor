@@ -5,7 +5,7 @@ import '../color/app_color.dart';
 import '../statics/app_statics.dart';
 import 'app_space.dart';
 import 'app_text.dart';
-import 'custom_shimmer.dart';
+import '../custom_widgets/custom_shimmer.dart';
 
 class AppButton extends StatelessWidget {
   const AppButton({

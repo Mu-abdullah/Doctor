@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../../core/extextions/extentions.dart';
+import '../../extextions/extentions.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../language/lang_keys.dart';
-import 'app_text.dart';
+import '../widgets/app_text.dart';
 
 class ShimmerLoadingText extends StatelessWidget {
   const ShimmerLoadingText({

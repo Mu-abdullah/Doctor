@@ -1,6 +1,6 @@
 import 'package:doctor/core/style/color/app_color.dart';
 import 'package:flutter/material.dart';
-import '../../../core/style/widgets/app_text.dart';
+import '../widgets/app_text.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class CustomSnackbar {

@@ -6,7 +6,7 @@ import '../../../../core/language/lang_keys.dart';
 import '../../../../core/routes/routes_name.dart';
 import '../../../../core/style/color/app_color.dart';
 import '../../../../core/style/statics/app_statics.dart';
-import '../../../../core/style/widgets/custom_app_bar.dart';
+import '../../../../core/style/custom_widgets/custom_app_bar.dart';
 
 class AssistantAppBar extends StatelessWidget implements PreferredSizeWidget {
   const AssistantAppBar({super.key, required this.isAdmin});

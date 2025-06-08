@@ -9,7 +9,7 @@ import '../../language/lang_keys.dart';
 import '../../style/color/app_color.dart';
 import '../../style/statics/image_test.dart';
 import '../../style/widgets/app_button.dart';
-import '../../style/widgets/custom_snack_bar.dart';
+import '../../style/custom_widgets/custom_snack_bar.dart';
 import 'connection_controller/connection_controller.dart';
 
 class NoInternetScreen extends StatelessWidget {

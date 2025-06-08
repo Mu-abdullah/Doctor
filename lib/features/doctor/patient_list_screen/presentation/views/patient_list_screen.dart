@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/style/widgets/custom_app_bar.dart';
+import '../../../../../core/style/custom_widgets/custom_app_bar.dart';
 import '../refactor/patient_list_screen_body.dart';
 
 class PatientListScreen extends StatelessWidget {

@@ -3,7 +3,7 @@ import 'package:hugeicons/hugeicons.dart';
 
 import '../../../../../../core/language/lang_keys.dart';
 import '../../../../../../core/style/color/app_color.dart';
-import '../../../../../../core/style/widgets/custom_bottom_sheet.dart';
+import '../../../../../../core/style/custom_widgets/custom_bottom_sheet.dart';
 import 'record_screen.dart';
 
 class OpenRecordButton extends StatelessWidget {

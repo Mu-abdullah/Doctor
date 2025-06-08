@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-import '../../../core/style/color/app_color.dart';
-import '../../../core/style/widgets/app_text.dart';
+import '../color/app_color.dart';
+import '../widgets/app_text.dart';
 import '../statics/app_statics.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {

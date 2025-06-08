@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/language/lang_keys.dart';
 import '../../../../../core/style/widgets/app_button.dart';
-import '../../../../../core/style/widgets/custom_snack_bar.dart';
+import '../../../../../core/style/custom_widgets/custom_snack_bar.dart';
 import '../cubits/register_new_patient_cubit/register_new_patient_cubit.dart';
 
 class RegisterNewPatientButton extends StatelessWidget {

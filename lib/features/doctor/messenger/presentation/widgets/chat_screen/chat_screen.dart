@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/language/lang_keys.dart';
 import '../../../../../../core/style/widgets/app_button.dart';
 import '../../../../../../core/style/widgets/app_text_form_felid.dart';
-import '../../../../../../core/style/widgets/custom_app_bar.dart';
+import '../../../../../../core/style/custom_widgets/custom_app_bar.dart';
 import 'chat_list.dart';
 
 class ChatScreen extends StatelessWidget {

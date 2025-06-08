@@ -5,7 +5,7 @@ import 'package:hugeicons/hugeicons.dart';
 import '../../../../../../core/language/lang_keys.dart';
 import '../../../../../../core/routes/routes_name.dart';
 import '../../../../../../core/style/color/app_color.dart';
-import '../../../../../../core/style/widgets/custom_snack_bar.dart';
+import '../../../../../../core/style/custom_widgets/custom_snack_bar.dart';
 import '../admin_home_custom_button.dart';
 import '../admin_section.dart';
 

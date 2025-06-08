@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/services/status/gender_status.dart';
-import '../../../../../core/style/widgets/custom_gender.dart';
+import '../../../../../core/style/custom_widgets/custom_gender.dart';
 
 class NewClientGender extends StatefulWidget {
   const NewClientGender({super.key});

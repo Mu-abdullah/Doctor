@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/style/widgets/custom_app_bar.dart';
+import '../../../../../core/style/custom_widgets/custom_app_bar.dart';
 import '../refactor/admin_home_body.dart';
 
 class AdminHome extends StatelessWidget {

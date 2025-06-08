@@ -1,5 +1,5 @@
 import 'package:doctor/core/services/status/gender_status.dart';
-import 'package:doctor/core/style/widgets/patient_card.dart';
+import 'package:doctor/core/style/custom_widgets/patient_card.dart';
 import 'package:flutter/material.dart';
 
 class StudentHomeScreenBody extends StatelessWidget {

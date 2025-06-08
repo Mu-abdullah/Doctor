@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/language/lang_keys.dart';
-import '../../../../../../core/style/widgets/section_title.dart';
+import '../../../../../../core/style/custom_widgets/section_title.dart';
 import 'visit_history_listview.dart';
 
 class VisitHistory extends StatelessWidget {

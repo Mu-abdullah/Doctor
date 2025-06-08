@@ -3,7 +3,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../style/color/app_color.dart';
 import '../../style/widgets/app_space.dart';
-import '../../style/widgets/custom_app_bar.dart';
+import '../../style/custom_widgets/custom_app_bar.dart';
 
 class PreviewImage extends StatelessWidget {
   const PreviewImage({this.imageUrl, super.key, this.title, this.imagesList});

@@ -6,7 +6,7 @@ import '../../../../../../core/style/color/app_color.dart';
 import '../../../../../../core/style/statics/app_statics.dart';
 import '../../../../../../core/style/statics/image_test.dart';
 import '../../../../../../core/style/widgets/app_text.dart';
-import '../../../../../../core/style/widgets/custom_bottom_sheet.dart';
+import '../../../../../../core/style/custom_widgets/custom_bottom_sheet.dart';
 
 class VistiHistoryItem extends StatelessWidget {
   const VistiHistoryItem({super.key});

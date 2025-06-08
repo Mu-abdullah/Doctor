@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../color/app_color.dart';
 import '../statics/app_statics.dart';
-import 'app_text.dart';
+import '../widgets/app_text.dart';
 
 class GenericDropdown<T> extends StatelessWidget {
   final List<T> items;

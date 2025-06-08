@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/language/lang_keys.dart';
 import '../../../../../../core/style/statics/image_test.dart';
 import '../../../../../../core/style/widgets/app_text.dart';
-import '../../../../../../core/style/widgets/section_title.dart';
+import '../../../../../../core/style/custom_widgets/section_title.dart';
 
 class LastVisit extends StatelessWidget {
   const LastVisit({super.key});

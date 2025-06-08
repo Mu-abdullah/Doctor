@@ -6,7 +6,7 @@ import '../../language/lang_keys.dart';
 import '../../routes/routes_name.dart';
 import '../../services/status/gender_status.dart';
 import '../statics/app_statics.dart';
-import 'app_text.dart';
+import '../widgets/app_text.dart';
 
 class PatientCard extends StatelessWidget {
   const PatientCard({super.key, this.name, this.gender, this.age});

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 import '../color/app_color.dart';
-import 'app_space.dart';
-import 'app_text.dart';
+import '../widgets/app_space.dart';
+import '../widgets/app_text.dart';
 
 Future<dynamic> customShowBottomSheet({
   required BuildContext context,

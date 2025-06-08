@@ -1,4 +1,4 @@
-import 'package:doctor/core/style/widgets/custom_bottom_sheet.dart';
+import 'package:doctor/core/style/custom_widgets/custom_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
