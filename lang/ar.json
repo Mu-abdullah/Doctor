@@ -29,6 +29,7 @@
     "patient":"مريض",
     "client":"عميل",
     "newClient":"عميل جديد",
+    "test":"اختبار",
 
     "####newClientScreen":"",
     "personalInformation":"المعلومات الشخصية",

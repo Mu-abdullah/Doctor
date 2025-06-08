@@ -12,7 +12,7 @@ class AdminHomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding:  AppPadding.symmetricPadding(),
+        padding: AppPadding.symmetricPadding(),
         child: Column(
           spacing: 16,
           children: [ModeSection(), ClientsSection(), SettingsSection()],

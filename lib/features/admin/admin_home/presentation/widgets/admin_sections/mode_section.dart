@@ -79,4 +79,16 @@ List<Widget> getModeSectionItems(BuildContext context) => [
       );
     },
   ),
+  AdminHomeCustomButton(
+    title: LangKeys.test,
+    icon: HugeIcons.strokeRoundedTestTube01,
+    color: AppColors.red,
+    textColor: AppColors.white,
+    onTap: () {
+      context.pushNamed(
+        RoutesNames.assistantScreen,
+        arguments: {'isAdmin': true},
+      );
+    },
+  ),
 ];

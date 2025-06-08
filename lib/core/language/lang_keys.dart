@@ -31,6 +31,7 @@ class LangKeys {
   static const String patient = 'patient';
   static const String client = 'client';
   static const String newClient = 'newClient';
+  static const String test = 'test';
   
   /// [New Client Screen]
   static const String personalInformation = 'personalInformation';

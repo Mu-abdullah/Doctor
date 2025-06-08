@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../features/admin/admin_home/presentation/views/admin_home.dart';
 import '../../features/admin/new_client/presentation/view/new_client_screen.dart';
+import '../../features/admin/test/test_screen.dart';
 import '../../features/assistant/presentation/views/assistant_screen.dart';
 import '../../features/doctor/doctor_home/presentation/views/doctor_home.dart';
 import '../../features/doctor/profile_page/presentation/views/profile_page.dart';
@@ -49,6 +50,9 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
     case RoutesNames.newClient:
       return BaseRoute(page: const NewClientScreen());
+
+    case RoutesNames.test:
+      return BaseRoute(page: const TestScreen());
 
     /////////
     /////////[doctor feature routes]////////////

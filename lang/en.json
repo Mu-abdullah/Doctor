@@ -29,6 +29,7 @@
     "patient":"Patient",
     "client":"Client",
     "newClient":"New Client",
+    "test":"Test",
 
     "####newClientScreen":"",
     "personalInformation":"Personal Information",
