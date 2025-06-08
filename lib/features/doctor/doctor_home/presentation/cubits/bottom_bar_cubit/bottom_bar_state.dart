@@ -1,7 +1,7 @@
 part of 'bottom_bar_cubit.dart';
 
-abstract class BottomBarState {}
+abstract class DrHomeState {}
 
-class BottomBarInitial extends BottomBarState {}
+class BottomBarInitial extends DrHomeState {}
 
-class BottomBarTapped extends BottomBarState {}
+class BottomBarTapped extends DrHomeState {}

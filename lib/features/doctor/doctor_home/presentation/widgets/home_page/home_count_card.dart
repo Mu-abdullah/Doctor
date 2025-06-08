@@ -1,9 +1,9 @@
 import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/style/color/app_color.dart';
-import '../../../../../core/style/statics/app_statics.dart';
-import '../../../../../core/style/widgets/app_text.dart';
+import '../../../../../../core/style/color/app_color.dart';
+import '../../../../../../core/style/statics/app_statics.dart';
+import '../../../../../../core/style/widgets/app_text.dart';
 
 class HomeCountCard extends StatefulWidget {
   const HomeCountCard({

@@ -1,10 +1,10 @@
 import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/functions/timestamp_to_time.dart';
-import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/style/statics/app_statics.dart';
-import '../../../../../core/style/widgets/app_text.dart';
+import '../../../../../../core/functions/timestamp_to_time.dart';
+import '../../../../../../core/language/lang_keys.dart';
+import '../../../../../../core/style/statics/app_statics.dart';
+import '../../../../../../core/style/widgets/app_text.dart';
 
 class DoctorName extends StatelessWidget {
   const DoctorName({super.key});

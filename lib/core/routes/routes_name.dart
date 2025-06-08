@@ -12,11 +12,13 @@ class RoutesNames {
   
   /// [Doctor screens]
   static const String doctorHome = 'doctorHome';
+  static const String settingsScreen = 'settingsScreen';
   static const String doctorSearch = 'doctorSearch';
   static const String doctorProfile = 'doctorProfile';
   static const String patientScreen = 'patientScreen';
   static const String patientListScreen = 'patientListScreen';
   static const String visitsScreen = 'visitsScreen';
+  static const String messengerScreen = 'messengerScreen';
   static const String chatScreen = 'chatScreen';
 
   /// [Student screens]

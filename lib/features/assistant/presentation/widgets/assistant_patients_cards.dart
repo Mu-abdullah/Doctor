@@ -6,7 +6,7 @@ import '../../../../core/language/lang_keys.dart';
 import '../../../../core/routes/routes_name.dart';
 import '../../../../core/style/color/app_color.dart';
 import '../../../../core/style/widgets/custom_bottom_sheet.dart';
-import '../../../doctor/doctor_home_page/presentation/widgets/home_count_card.dart';
+import '../../../doctor/doctor_home/presentation/widgets/home_page/home_count_card.dart';
 import '../../../doctor/new_patient/presentation/views/new_patient.dart';
 
 class AssistantPatientsCards extends StatelessWidget {

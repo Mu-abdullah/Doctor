@@ -1,21 +1,19 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../data/repo/user_bottom_bar_item.dart';
-
 part 'bottom_bar_state.dart';
 
-class BottomBarCubit extends Cubit<BottomBarState> {
-  BottomBarCubit() : super(BottomBarInitial());
-  static BottomBarCubit get(context) => BlocProvider.of(context);
+class DrHomeCubit extends Cubit<DrHomeState> {
+  DrHomeCubit(this.isAdmin) : super(BottomBarInitial());
+  static DrHomeCubit get(context) => BlocProvider.of(context);
 
-  int currentIndex = 0;
+  final bool isAdmin;
 
-  var titles = UserBottomNavigation.titles;
-
-  var pages = UserBottomNavigation.itemsBody;
-
-  void onTabTapped(int index) {
-    currentIndex = index;
-    emit(BottomBarTapped());
-  }
+  ///[When use bottom navigation bar]
+  // int currentIndex = 0;
+  // var titles = UserBottomNavigation.titles;
+  // var pages = UserBottomNavigation.itemsBody;
+  // void onTabTapped(int index) {
+  //   currentIndex = index;
+  //   emit(BottomBarTapped());
+  // }
 }

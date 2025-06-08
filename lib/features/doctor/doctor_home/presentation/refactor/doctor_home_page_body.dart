@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/doctor_name.dart';
-import '../widgets/search_field_widget.dart';
-import '../widgets/sick_count.dart';
+import '../widgets/home_page/doctor_name.dart';
+import '../widgets/home_page/search_field_widget.dart';
+import '../widgets/home_page/sick_count.dart';
 
 class DoctorHomePageBody extends StatelessWidget {
   const DoctorHomePageBody({super.key});
