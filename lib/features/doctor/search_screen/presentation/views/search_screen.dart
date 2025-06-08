@@ -7,8 +7,8 @@ import '../../../../../core/style/widgets/app_text_form_felid.dart';
 import '../../../../../core/style/widgets/custom_app_bar.dart';
 import '../../../../../core/style/widgets/patient_card.dart';
 
-class DoctorSearchScreen extends StatelessWidget {
-  const DoctorSearchScreen({super.key, this.searchQuery});
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({super.key, this.searchQuery});
   final String? searchQuery;
   @override
   Widget build(BuildContext context) {

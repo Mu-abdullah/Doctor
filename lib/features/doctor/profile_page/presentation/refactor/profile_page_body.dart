@@ -5,8 +5,8 @@ import '../../../../../core/style/statics/app_statics.dart';
 import '../../../../../core/style/statics/image_test.dart';
 import '../widgets/doctor_info.dart';
 
-class DoctorProfilePageBody extends StatelessWidget {
-  const DoctorProfilePageBody({super.key});
+class ProfilePageBody extends StatelessWidget {
+  const ProfilePageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
