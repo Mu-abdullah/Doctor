@@ -32,6 +32,8 @@ class AppPadding {
 
 class Statics {
   static const double buttonsHeight = 70;
+  static const double appBarHeight = 56;
+  
 }
 
 class Validation {

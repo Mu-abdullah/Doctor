@@ -3,6 +3,7 @@ import 'package:hugeicons/hugeicons.dart';
 
 import '../../../core/style/color/app_color.dart';
 import '../../../core/style/widgets/app_text.dart';
+import '../statics/app_statics.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
@@ -60,5 +61,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(56);
+  Size get preferredSize => Size.fromHeight(Statics.appBarHeight);
 }

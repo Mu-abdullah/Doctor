@@ -108,6 +108,10 @@
     "register":"Register",
 
     "####StudentScreen":"",
-    "upgrade":"Upgrade"
+    "upgrade":"Upgrade",
+
+    "####AssistantScreen":"",
+    "clinic":"Clinic",
+    "dr":"Dr."
 }
  

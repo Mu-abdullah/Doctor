@@ -113,4 +113,8 @@ class LangKeys {
 
   /// [Student Screen]
   static const String upgrade = 'upgrade';
+  
+  /// [Assistant Screen]
+  static const String clinic = 'clinic';
+  static const String dr = 'dr';
 }

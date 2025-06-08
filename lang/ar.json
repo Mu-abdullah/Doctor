@@ -109,6 +109,10 @@
     "register":"تسجيل",
 
     "####StudentScreen":"",
-    "upgrade":"ترقية"
+    "upgrade":"ترقية",
+
+    "####AssistantScreen":"",
+    "clinic":"عيادة",
+    "dr":"د."
 }
  
