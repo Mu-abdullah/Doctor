@@ -21,4 +21,7 @@ class RoutesNames {
 
   /// [Student screens]
   static const String studentHomeScreen = 'studentHomeScreen';
+
+  /// [Assistant screens]
+  static const String assistantScreen = 'assistantScreen';
 }

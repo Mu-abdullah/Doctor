@@ -52,6 +52,18 @@ class ModeSection extends StatelessWidget {
               );
             },
           ),
+          AdminHomeCustomButton(
+            title: LangKeys.assistant,
+            icon: HugeIcons.strokeRoundedDoctor02,
+            color: AppColors.black,
+            textColor: AppColors.white,
+            onTap: () {
+              context.pushNamed(
+                RoutesNames.assistantScreen,
+                arguments: {'isAdmin': true},
+              );
+            },
+          ),
         ],
       ),
     );

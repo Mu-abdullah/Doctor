@@ -26,6 +26,7 @@ class LangKeys {
   static const String screens = 'screens';
   static const String modes = 'modes';
   static const String doctor = 'doctor';
+  static const String assistant = 'assistant';
   static const String student = 'student';
   static const String patient = 'patient';
   static const String client = 'client';
@@ -41,6 +42,7 @@ class LangKeys {
   static const String professionalInformation = 'professionalInformation';
   static const String specialization = 'specialization';
   static const String degree = 'degree';
+  static const String degreehint = 'degreehint';
   static const String university = 'university';
   static const String graduation = 'graduation';
   static const String city = 'city';

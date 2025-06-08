@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../features/admin/admin_home/presentation/views/admin_home.dart';
 import '../../features/admin/new_client/presentation/view/new_client_screen.dart';
+import '../../features/assistant/presentation/views/assistant_screen.dart';
 import '../../features/doctor/doctor_home/presentation/views/doctor_home.dart';
 import '../../features/doctor/doctor_profile_page/presentation/views/doctor_profile_page.dart';
 import '../../features/doctor/doctor_search_screen/presentation/views/doctor_search_screen.dart';
@@ -84,6 +85,12 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return BaseRoute(
         page: StudentHomeScreen(isAdmin: args?['isAdmin'] as bool? ?? false),
       );
+    /////////
+    /////////[Student feature routes]////////////
+    /////////
+
+    case RoutesNames.assistantScreen:
+      return BaseRoute(page: AssistantScreen(isAdmin: args?['isAdmin'] as bool? ?? false));
 
     /////////
     /////////[User feature routes]////////////

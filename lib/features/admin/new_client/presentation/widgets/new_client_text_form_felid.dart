@@ -10,6 +10,7 @@ class NewClientTextFormFelid extends StatelessWidget {
     required this.controller,
     required this.label,
     this.type = TextInputType.text,
+    this.hint,
     this.icon,
     this.validate,
     this.onTap,
@@ -20,6 +21,7 @@ class NewClientTextFormFelid extends StatelessWidget {
   });
   final TextEditingController controller;
   final String label;
+  final String? hint;
   final FormFieldValidator<String>? validate;
   final TextInputType type;
   final IconData? icon;
@@ -35,7 +37,7 @@ class NewClientTextFormFelid extends StatelessWidget {
       prefix: icon == null ? null : Icon(icon),
       type: type,
       label: label,
-      hint: label,
+      hint: hint?? label,
       isPassword: isPassword,
       maxLines: maxLines,
       maxLength: maxLength,

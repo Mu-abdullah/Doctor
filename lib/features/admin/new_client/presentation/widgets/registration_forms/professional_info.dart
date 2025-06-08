@@ -2,13 +2,13 @@ import 'package:doctor/core/extextions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:hugeicons/hugeicons.dart';
 
-import '../../../../../core/functions/select_data.dart';
-import '../../../../../core/language/lang_keys.dart';
-import '../../../../../core/style/color/app_color.dart';
-import '../../../../../core/style/statics/app_statics.dart';
-import '../../../../../core/style/widgets/app_text.dart';
-import '../../../admin_home/presentation/widgets/admin_section.dart';
-import 'new_client_text_form_felid.dart';
+import '../../../../../../core/functions/select_data.dart';
+import '../../../../../../core/language/lang_keys.dart';
+import '../../../../../../core/style/color/app_color.dart';
+import '../../../../../../core/style/statics/app_statics.dart';
+import '../../../../../../core/style/widgets/app_text.dart';
+import '../../../../admin_home/presentation/widgets/admin_section.dart';
+import '../new_client_text_form_felid.dart';
 
 class ProfessionalInformation extends StatefulWidget {
   const ProfessionalInformation({super.key});
@@ -24,6 +24,7 @@ class _ProfessionalInformationState extends State<ProfessionalInformation> {
   final _universityController = TextEditingController();
   final _graduationController = TextEditingController();
   final _cityController = TextEditingController();
+  final _aboutController = TextEditingController();
 
   bool _isEnabled = false;
 
@@ -83,14 +84,23 @@ class _ProfessionalInformationState extends State<ProfessionalInformation> {
                           controller: _specializationController,
                           label: LangKeys.specialization,
                           icon: HugeIcons.strokeRoundedWork,
-                          type: TextInputType.text,
+                          type: TextInputType.multiline,
+                          enabled: _isEnabled,
+                        ),
+
+                        _buildTextField(
+                          controller: _degreeController,
+                          label: LangKeys.degree,
+                          hint: LangKeys.degreehint,
+                          icon: HugeIcons.strokeRoundedProfile,
+                          type: TextInputType.multiline,
                           enabled: _isEnabled,
                         ),
                         _buildTextField(
                           controller: _graduationController,
                           label: LangKeys.graduation,
                           icon: HugeIcons.strokeRoundedCalendar01,
-                          type: TextInputType.text,
+                          type: TextInputType.multiline,
                           onTap: () {
                             selectData(
                               context: context,
@@ -99,13 +109,6 @@ class _ProfessionalInformationState extends State<ProfessionalInformation> {
                               format: 'yyyy',
                             );
                           },
-                          enabled: _isEnabled,
-                        ),
-                        _buildTextField(
-                          controller: _degreeController,
-                          label: LangKeys.degree,
-                          icon: HugeIcons.strokeRoundedProfile,
-                          type: TextInputType.text,
                           enabled: _isEnabled,
                         ),
                       ],
@@ -126,6 +129,12 @@ class _ProfessionalInformationState extends State<ProfessionalInformation> {
                   icon: HugeIcons.strokeRoundedCity03,
                   type: TextInputType.text,
                 ),
+                _buildTextField(
+                  controller: _aboutController,
+                  label: LangKeys.about,
+                  icon: HugeIcons.strokeRoundedInformationSquare,
+                  type: TextInputType.multiline,
+                ),
               ],
             ),
           ],
@@ -140,6 +149,7 @@ class _ProfessionalInformationState extends State<ProfessionalInformation> {
     required IconData icon,
     required TextInputType type,
     String? Function(String?)? validate,
+    String? hint,
     bool isPassword = false,
     int? maxLength,
     int? maxLines,
@@ -150,6 +160,7 @@ class _ProfessionalInformationState extends State<ProfessionalInformation> {
       controller: controller,
       type: type,
       label: label,
+      hint: hint ?? label,
       icon: icon,
       validate: validate,
       isPassword: isPassword,

@@ -13,12 +13,14 @@ class AdminHomeCustomButton extends StatelessWidget {
     required this.onTap,
     this.color = AppColors.blueAccent,
     this.textColor = AppColors.black,
+    this.iconColor,
   });
   final String title;
   final IconData icon;
   final VoidCallback onTap;
   final Color color;
   final Color textColor;
+  final Color? iconColor;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,10 @@ class AdminHomeCustomButton extends StatelessWidget {
         height: 100,
         decoration: BoxDecoration(
           borderRadius: AppBorderRadius.mediumRadius,
-          gradient: LinearGradient(colors: [AppColors.white, color]),
+          gradient: LinearGradient(
+            colors:
+                isArabic ? [color, AppColors.white] : [AppColors.white, color],
+          ),
         ),
         child: Stack(
           children: [
@@ -53,7 +58,7 @@ class AdminHomeCustomButton extends StatelessWidget {
               left: isArabic ? -20 : null,
               child: Icon(
                 icon,
-                color: AppColors.white.withValues(alpha: 0.2),
+                color: iconColor ?? textColor.withValues(alpha: 0.2),
                 size: 120,
               ),
             ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../cubits/new_client_cubit/new_client_cubit.dart';
-import '../widgets/new_client_indecator.dart';
+import '../widgets/indecators/page_indecator_steps.dart';
+import '../widgets/indecators/page_indecator_buttons.dart';
 
 class NewClientScreenBody extends StatelessWidget {
   const NewClientScreenBody({super.key});
@@ -11,6 +12,7 @@ class NewClientScreenBody extends StatelessWidget {
     final cubit = NewClientCubit.get(context);
     return Column(
       children: [
+        const PageIndicatorSteps(),
         Expanded(
           child: PageView.builder(
             controller: cubit.controller,
@@ -19,7 +21,7 @@ class NewClientScreenBody extends StatelessWidget {
             itemBuilder: (_, index) => cubit.pages[index],
           ),
         ),
-        const NewClientPageIndicator(),
+        const PageIndicatorButtons(),
       ],
     );
   }
